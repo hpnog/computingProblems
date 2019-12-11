@@ -1,4 +1,4 @@
-# Found in https://leetcode.com/problems/two-sum/
+// Found in https://leetcode.com/problems/two-sum/
 
 class Solution {
 public:
