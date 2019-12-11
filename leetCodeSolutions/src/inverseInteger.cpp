@@ -1,5 +1,8 @@
 // Found in https://leetcode.com/problems/reverse-integer/
 
+// Time Complexity:     O(log(n))
+// Space Complexity:    O(1)
+
 class Solution {
 public:
     int reverse(int x) {
