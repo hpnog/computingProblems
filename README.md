@@ -8,4 +8,6 @@
  * [Roman To Integer](leetCodeSolutions/src/romanToInteger.cpp) - 14/12/2019;
  * [Longest Common Prefix](leetCodeSolutions/src/longestCommonPrefix.cpp) - 14/12/2019;
  * [Add Two Numbers](leetCodeSolutions/src/addTwoNumbers.cpp) - 14/12/2019;
- *
+ * [Longest Substring Without Repeating Characters](leetCodeSolutions/src/longestSubstringWithoutRepeatingCharacters.cpp) - 14/12/2019;
+ * 
+ 
