@@ -1,7 +1,7 @@
 // Found in https://leetcode.com/problems/longest-substring-without-repeating-characters/
 
 // Time Complexity:     O(n)
-// Space Complexity:    O(min(m,n) - Upper bounded by the size of the string (n) and the size of the charset/alphabet (m). 
+// Space Complexity:    O(1) - The size of the charset/alphabet limits the size of the unordered_map. 
 
 
 class Solution {
