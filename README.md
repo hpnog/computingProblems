@@ -10,5 +10,6 @@
  * [Add Two Numbers](leetCodeSolutions/src/addTwoNumbers.cpp) - 14/12/2019;
  * [Longest Substring Without Repeating Characters](leetCodeSolutions/src/longestSubstringWithoutRepeatingCharacters.cpp) - 14/12/2019;
  * [Longest Palindromic Substring](leetCodeSolutions/src/longestPalindromicSubstring.cpp) - 16/12/2019;
-  * 
+ * [ZigZag Conversion](leetCodeSolutions/src/zigzagConversion.cpp) - 16/12/2019;
+  *  
  
