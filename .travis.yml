@@ -11,4 +11,5 @@ addons:
 install:
 - "[ $CXX = g++ ] && export CXX=g++-7 || true"
 script:
-  - make build_git
+  - make
+  - make clean

@@ -2,29 +2,26 @@
 CC=g++
 CFLAGS=-c -Wall 
 
-# SRC=./src/
-# SRC_LEETCODE=leetCodeSolutions/
+SRC=src
+SRC_LEETCODE=$(SRC)/leetCodeSolutions
 
-BUILD_TARGET=./build
+# Dirs to be created
+BUILD_DIR := build
 
-# _buildFolder := $(shell mkdir -p build)
+SRCS := $(SRC)/main.cpp $(SRC_LEETCODE)/addTwoNumbers.cpp
+OBJS := $(SRC)/main.o $(SRC_LEETCODE)/addTwoNumbers.o
 
-all: build
+$(BUILD_DIR)/%.o: src/%.cpp
+	mkdir -p $(@D)
+	$(CC) -c $< -o $@
 
-build: main.o addTwoNumbers.o
-	$(CC) main.o addTwoNumbers.o -o $(BUILD_TARGET)/sePrep
+$(BUILD_DIR)/sePrep: $(OBJS)
+	mkdir -p $(@D)
+	$(CC) $^ -o $@
 
-build_git: main.o addTwoNumbers.o
-	$(CC) main.o addTwoNumbers.o -o sePrep
+all: sePrep
 
-main.o: 	 
-	$(CC) $(CFLAGS) src/main.cpp
-
-addTwoNumbers.o:
-	$(CC) $(CFLAGS) src/leetCodeSolutions/addTwoNumbers.cpp
-
-# Uncomment the following to thefine "compile" function
-# compile: 
+sePrep: $(BUILD_DIR)/sePrep
 
 clean:
-	rm -rf *o ./build/sePrep
+	rm -rf *o ./$(SRC)/*.o ./$(SRC_LEETCODE)/*.o ./$(BUILD_DIR)/sePrep

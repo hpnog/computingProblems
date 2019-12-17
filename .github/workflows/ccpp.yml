@@ -21,4 +21,6 @@ jobs:
     steps:
      - uses: actions/checkout@v1
      - name: make
-       run: make build_git
+       run: make
+     - name: make clean
+       run: make clean
