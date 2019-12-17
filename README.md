@@ -1,6 +1,8 @@
 # Software Enineering Prep
 
-[![Build Status](https://travis-ci.com/hpnog/sePrep.svg?token=2qLgErpky1Ks2MQtavRv&branch=master)](https://travis-ci.com/hpnog/sePrep)
+[![Build Status](https://travis-ci.com/hpnog/sePrep.svg?token=2qLgErpky1Ks2MQtavRv&branch=master)](https://travis-ci.com/hpnog/sePrep) | [![codecov](https://codecov.io/gh/hpnog/sePrep/branch/master/graph/badge.svg?token=YCa575URD4)](https://codecov.io/gh/hpnog/sePrep)
+
+
 
 ## LeetCode Exercise Solutions
 
