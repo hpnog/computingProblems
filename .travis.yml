@@ -15,5 +15,4 @@ install:
 - "[ $CXX = g++ ] && export CXX=g++-7 || true"
 #- "[ $CXX = clang++ ] && export CXX=clang++-3.8 || true"
 script:
-  - make
   - make build_git
