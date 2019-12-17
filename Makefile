@@ -18,15 +18,19 @@ $(BUILD_DIR)/%.so: $(SRC_INCLUDE)/%.hpp
 	$(CC) $(CFLAGS) -c $< -o $@
 
 $(BUILD_DIR)/%.o: $(SRC)/%.cpp
+	mkdir -p $(@D)
 	$(CC) $(CFLAGS) -c $< -o $@
 
 $(BUILD_DIR)/%.o: $(SRC_LEETCODE)/%.cpp
+	mkdir -p $(@D)
 	$(CC) -c $(CFLAGS) -c $< -o $@
 
 $(BUILD_DIR)/sePrep: $(OBJS)
+	mkdir -p $(@D)
 	$(CC) $(CFLAGS) $^ -o $@
 
 $(BUILD_DIR)/sePrepTests: $(OBJS_TESTS)
+	mkdir -p $(@D)
 	$(CC) $(CFLAGS) $^ -o $@
 
 all: sePrep
