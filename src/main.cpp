@@ -1,4 +1,7 @@
 #include <iostream>
+#include <cstring>
+#include <cstdlib>
+
 #include "leetCodeSolutions/addTwoNumbers.h"
 
 using namespace std;
