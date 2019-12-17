@@ -8,9 +8,7 @@
 #include "problemInterface.h"
 
 class SolutionInverseInteger : public ProblemInterface {
-private:
-    int reverse(int x);
-
 public:
+    int reverse(int x);
     virtual int runTestCases();
 };
