@@ -34,3 +34,5 @@
 # Manualy added
 
 build/
+
+.vscode/

@@ -2,6 +2,7 @@
 #include <cstring>
 #include <cstdlib>
 #include <stdio.h>
+
 #include "leetCodeSolutions/addTwoNumbers.h"
 
 using namespace std;
@@ -22,18 +23,24 @@ void goToMainMenu() {
 
 		switch(atoi(input.c_str())) {
 			case 0:
+			{
 				cout << "Exiting program...\n";
 				toExit = true;
 				break;
+			}
 			case 1:
+			{
 				cout << "Selecting Add Two Numbers Probem...\n";
-
+				//SolutionAddTwoNumbers problem;
 				cout << "\n\nPress Enter to continue...\n";
 				getchar();
 				break;
+			}
 			default:
+			{
 				cout << "Input not recognized.\n\n\n";
 				break;
+			}
 		}
 	}
 }

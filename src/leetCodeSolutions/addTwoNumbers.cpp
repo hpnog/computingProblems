@@ -1,6 +1,18 @@
 #include <iostream>
 #include "addTwoNumbers.h"
 
+bool ListNode::compare(ListNode * y)  {
+    std::cout << val << std::endl;
+    std::cout << y->val << std::endl;
+
+    if(val != y->val)
+        return false;
+    if(next == NULL && y->next == NULL)
+        return true;
+
+    return next->compare(y->next);
+}
+
 ListNode* SolutionAddTwoNumbers::addTwoNumbers(ListNode* l1, ListNode* l2, int extra) {
     if(l1 == NULL && l2 == NULL && extra == 0)
         return NULL;
@@ -29,4 +41,8 @@ ListNode* SolutionAddTwoNumbers::addTwoNumbers(ListNode* l1, ListNode* l2, int e
     }
     
     return resNode;
-}
+};
+
+int SolutionAddTwoNumbers::runTestCases() {
+    return 0;
+};
