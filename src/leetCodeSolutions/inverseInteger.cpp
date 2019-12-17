@@ -19,6 +19,7 @@ int SolutionInverseInteger::reverse(int x) {
 };
 
 int SolutionInverseInteger::runTestCases() {
+    std::cout << "Selecting Inverse Integer Probem...\n";
     std::cout << "Going to run test cases:\n\n";
     std::cout << "Reverse of: 85264379 is expected: 97346258 | Result is: " << reverse(85264379) << std::endl;
     std::cout << "Reverse of: 123 is expected: 321 | Result is: " << reverse(123) << std::endl;

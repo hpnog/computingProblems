@@ -6,8 +6,17 @@
 #include "leetCodeSolutions/addTwoNumbers.h"
 #include "leetCodeSolutions/inverseInteger.h"
 #include "leetCodeSolutions/longestCommonPrefix.h"
+#include "leetCodeSolutions/longestPalindromicSubstring.h"
 
 using namespace std;
+
+void runSolution(ProblemInterface& problem, bool &testsRunning) {
+	problem.runTestCases();
+	cout << "Press Enter to continue...\n";
+	if(!testsRunning) {
+		getchar();
+	}
+}
 
 void goToMainMenu(bool& testsRunning) {
 	bool toExit = false;
@@ -27,6 +36,7 @@ void goToMainMenu(bool& testsRunning) {
 		cout << "1 - Add Two Numbers Probem\n";
 		cout << "2 - Inverse Integer Probem\n";
 		cout << "3 - Longest Common Prefix Probem\n";
+		cout << "4 - Longest Palindromic Substring Probem\n";
 		cout << "\n0 - Exit\n\n";
 
 		string input;
@@ -44,35 +54,26 @@ void goToMainMenu(bool& testsRunning) {
 			}
 			case 1:
 			{
-				cout << "Selecting Add Two Numbers Probem...\n";
 				SolutionAddTwoNumbers problem;
-				problem.runTestCases();
-				cout << "Press Enter to continue...\n";
-				if(!testsRunning) {
-					getchar();
-				}
+				runSolution(problem, testsRunning);
 				break;
 			}
 			case 2:
 			{
-				cout << "Selecting Inverse Integer Probem...\n";
 				SolutionInverseInteger problem;
-				problem.runTestCases();
-				cout << "Press Enter to continue...\n";
-				if(!testsRunning) {
-					getchar();
-				}
+				runSolution(problem, testsRunning);
 				break;
 			}
 			case 3:
 			{
-				cout << "Selecting Longest Common Prefix Problem...\n";
 				SolutionLongestCommonPrefix problem;
-				problem.runTestCases();
-				cout << "Press Enter to continue...\n";
-				if(!testsRunning) {
-					getchar();
-				}
+				runSolution(problem, testsRunning);
+				break;
+			}
+			case 4: 
+			{
+				SolutionLongestPalindromeSubstring problem;
+				runSolution(problem, testsRunning);
 				break;
 			}
 			default:

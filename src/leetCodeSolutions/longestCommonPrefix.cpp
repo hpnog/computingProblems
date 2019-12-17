@@ -17,6 +17,7 @@ std::string SolutionLongestCommonPrefix::longestCommonPrefix(std::vector<std::st
 };
 
 int SolutionLongestCommonPrefix::runTestCases() {
+    std::cout << "Selecting Longest Common Prefix Problem...\n";
     std::cout << "Going to run test cases:\n\n";
 
     std::vector<std::string> testCase_1 = {"flower","flow","flight"};
