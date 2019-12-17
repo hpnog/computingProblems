@@ -5,6 +5,7 @@
 
 #include "leetCodeSolutions/addTwoNumbers.h"
 #include "leetCodeSolutions/inverseInteger.h"
+#include "leetCodeSolutions/longestCommonPrefix.h"
 
 using namespace std;
 
@@ -25,6 +26,7 @@ void goToMainMenu(bool& testsRunning) {
 
 		cout << "1 - Add Two Numbers Probem\n";
 		cout << "2 - Inverse Integer Probem\n";
+		cout << "3 - Longest Common Prefix Probem\n";
 		cout << "\n0 - Exit\n\n";
 
 		string input;
@@ -55,6 +57,17 @@ void goToMainMenu(bool& testsRunning) {
 			{
 				cout << "Selecting Inverse Integer Probem...\n";
 				SolutionInverseInteger problem;
+				problem.runTestCases();
+				cout << "Press Enter to continue...\n";
+				if(!testsRunning) {
+					getchar();
+				}
+				break;
+			}
+			case 3:
+			{
+				cout << "Selecting Longest Common Prefix Problem...\n";
+				SolutionLongestCommonPrefix problem;
 				problem.runTestCases();
 				cout << "Press Enter to continue...\n";
 				if(!testsRunning) {

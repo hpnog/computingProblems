@@ -10,9 +10,9 @@ SRC_INCLUDE=$(SRC)/include
 # Dirs to be created
 BUILD_DIR := build
 
-SRCS := $(SRC)/main.cpp $(SRC)/tests.cpp $(SRC_LEETCODE)/addTwoNumbers.cpp $(SRC_LEETCODE)/inverseInteger.cpp
-OBJS := $(SRC)/main.o $(SRC_LEETCODE)/addTwoNumbers.o $(SRC_LEETCODE)/inverseInteger.o 
-OBJS_TESTS := $(SRC)/tests.o $(SRC_LEETCODE)/addTwoNumbers.o $(SRC_LEETCODE)/inverseInteger.o
+SRCS := $(SRC)/main.cpp $(SRC)/tests.cpp $(SRC_LEETCODE)/addTwoNumbers.cpp $(SRC_LEETCODE)/inverseInteger.cpp $(SRC_LEETCODE)/longestCommonPrefix.cpp
+OBJS := $(SRC)/main.o $(SRC_LEETCODE)/addTwoNumbers.o $(SRC_LEETCODE)/inverseInteger.o $(SRC_LEETCODE)/longestCommonPrefix.o
+OBJS_TESTS := $(SRC)/tests.o $(SRC_LEETCODE)/addTwoNumbers.o $(SRC_LEETCODE)/inverseInteger.o $(SRC_LEETCODE)/longestCommonPrefix.o
 
 $(SRC_INCLUDE)/%.so: $(SRC_INCLUDE)/%.hpp
 	$(CC) $(CFLAGS_COVER) -c $< -o $@
