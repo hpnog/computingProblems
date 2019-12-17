@@ -2,9 +2,6 @@
 #include "addTwoNumbers.h"
 
 bool ListNode::compare(ListNode * y)  {
-    std::cout << val << std::endl;
-    std::cout << y->val << std::endl;
-
     if(val != y->val)
         return false;
     if(next == NULL && y->next == NULL)
@@ -12,6 +9,19 @@ bool ListNode::compare(ListNode * y)  {
 
     return next->compare(y->next);
 }
+
+std::string SolutionAddTwoNumbers::printList(ListNode * l) {
+    std::string res;
+    res += "[ " + std::to_string(l->val);
+
+    while(l->next != NULL) {
+        l = l->next;
+        res += ", " + std::to_string(l->val);
+    }
+
+    res += " ]\0";
+    return res;
+};
 
 ListNode* SolutionAddTwoNumbers::addTwoNumbers(ListNode* l1, ListNode* l2, int extra) {
     if(l1 == NULL && l2 == NULL && extra == 0)
@@ -44,5 +54,20 @@ ListNode* SolutionAddTwoNumbers::addTwoNumbers(ListNode* l1, ListNode* l2, int e
 };
 
 int SolutionAddTwoNumbers::runTestCases() {
+    SolutionAddTwoNumbers solutionAddTwoNumbers;
+
+    ListNode * arg1 = solutionAddTwoNumbers.testAddTwoNumbersArg_1;
+    ListNode * arg2 = solutionAddTwoNumbers.testAddTwoNumbersArg_2;
+    
+    ListNode * sol = solutionAddTwoNumbers.test_1_solution;
+
+    ListNode *  result_1 = solutionAddTwoNumbers.addTwoNumbers(arg1, arg2);
+
+    std::cout << "Going to run test case 1:\n\n";
+    std::cout << "Arg 1 = " << printList(arg1) << std::endl;
+    std::cout << "Arg 2 = " << printList(arg2) << std::endl << std::endl;
+    std::cout << "Expected Result = " << printList(sol) << std::endl;
+    std::cout << "Achieved Result = " << printList(result_1) << std::endl << std::endl;
+
     return 0;
 };

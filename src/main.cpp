@@ -15,6 +15,8 @@ void goToMainMenu() {
 	cout << "################################\n\n";
 
 	while(!toExit) {
+		cout << "################################################################\n";
+
 		cout << "1 - Add Two Numbers Probem\n";
 		cout << "\n0 - Exit\n\n";
 
@@ -31,8 +33,9 @@ void goToMainMenu() {
 			case 1:
 			{
 				cout << "Selecting Add Two Numbers Probem...\n";
-				//SolutionAddTwoNumbers problem;
-				cout << "\n\nPress Enter to continue...\n";
+				SolutionAddTwoNumbers problem;
+				problem.runTestCases();
+				cout << "Press Enter to continue...\n";
 				getchar();
 				break;
 			}
