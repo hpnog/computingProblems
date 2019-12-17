@@ -4,7 +4,7 @@
 // Space Complexity:    O(1)
 //
 
-class Solution {
+class SolutionLongestPalindromeSubstring {
 public:
     pair<short, short> expandFromTheCenter(string &s, short i) {
         short left, right;

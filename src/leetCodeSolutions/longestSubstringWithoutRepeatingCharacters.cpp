@@ -4,7 +4,7 @@
 // Space Complexity:    O(1) - The size of the charset/alphabet limits the size of the unordered_map. 
 
 
-class Solution {
+class SolutionLongestSubstringWithoutRepeatingCharacters {
 public:
     int lengthOfLongestSubstring(string s) {
         int currentRecord = 0;

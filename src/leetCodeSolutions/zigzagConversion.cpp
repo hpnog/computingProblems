@@ -4,7 +4,7 @@
 // Space Complexity:    O(n)
 //
 
-class Solution {
+class SolutionZigZagConversion {
 public:
     string convert(string s, int numRows) {
         int zigZagReps = numRows > 1 ? ceil(s.size() / (2.0f * numRows - 2)) : s.size();

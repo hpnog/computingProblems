@@ -3,7 +3,7 @@
 // Time Complexity:     O(n) - where n is the number of characters of all the strings in the given vector
 // Space Complexity:    O(1)
 
-class Solution {
+class SolutionLongestCommonPrefix {
 public:
     string longestCommonPrefix(vector<string>& strs) {
         string result = "";

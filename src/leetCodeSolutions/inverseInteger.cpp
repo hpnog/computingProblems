@@ -3,7 +3,7 @@
 // Time Complexity:     O(log(n))
 // Space Complexity:    O(1)
 
-class Solution {
+class SolutionInverseInteger {
 public:
     int reverse(int x) {
         int result = 0;
