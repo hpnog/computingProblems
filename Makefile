@@ -10,9 +10,19 @@ SRC_INCLUDE=$(SRC)/include
 # Dirs to be created
 BUILD_DIR := build
 
-SRCS := $(SRC)/main.cpp $(SRC)/tests.cpp $(SRC_LEETCODE)/addTwoNumbers.cpp $(SRC_LEETCODE)/inverseInteger.cpp $(SRC_LEETCODE)/longestCommonPrefix.cpp $(SRC_LEETCODE)/longestPalindromicSubstring.cpp
-OBJS := $(SRC)/main.o $(SRC_LEETCODE)/addTwoNumbers.o $(SRC_LEETCODE)/inverseInteger.o $(SRC_LEETCODE)/longestCommonPrefix.o $(SRC_LEETCODE)/longestPalindromicSubstring.o
-OBJS_TESTS := $(SRC)/tests.o $(SRC_LEETCODE)/addTwoNumbers.o $(SRC_LEETCODE)/inverseInteger.o $(SRC_LEETCODE)/longestCommonPrefix.o  $(SRC_LEETCODE)/longestPalindromicSubstring.o
+################### SRCS ##################
+SRCS_LEETCODE := /addTwoNumbers.cpp $(SRC_LEETCODE)/inverseInteger.cpp $(SRC_LEETCODE)/longestCommonPrefix.cpp $(SRC_LEETCODE)/longestPalindromicSubstring.cpp
+
+SRCS := $(SRC)/main.cpp $(SRCS_LEETCODE)
+SRCS_TESTS := $(SRC)/tests.cpp $(SRCS_LEETCODE)
+############################################
+
+################### OBJS ###################
+OBJS_LEETCODE :=  $(SRC_LEETCODE)/addTwoNumbers.o $(SRC_LEETCODE)/inverseInteger.o $(SRC_LEETCODE)/longestCommonPrefix.o $(SRC_LEETCODE)/longestPalindromicSubstring.o
+
+OBJS := $(SRC)/main.o $(OBJS_LEETCODE)
+OBJS_TESTS := $(SRC)/tests.o $(OBJS_LEETCODE)
+############################################
 
 $(SRC_INCLUDE)/%.so: $(SRC_INCLUDE)/%.hpp
 	$(CC) $(CFLAGS_COVER) -c $< -o $@
