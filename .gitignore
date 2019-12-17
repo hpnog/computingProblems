@@ -36,3 +36,7 @@
 build/
 
 .vscode/
+
+# Code coverage files
+*.gcda
+*.gcno

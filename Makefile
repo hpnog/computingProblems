@@ -41,7 +41,7 @@ test:$(BUILD_DIR)/sePrepTests
 sePrep: $(BUILD_DIR)/sePrep
 
 clean:
-	rm -rf *o ./$(BUILD_DIR)/*.o ./$(BUILD_DIR)/*.so ./$(BUILD_DIR)/*.gcno ./$(BUILD_DIR)/*.gcov ./$(BUILD_DIR)/sePrep ./$(BUILD_DIR)/sePrepTests
-	rm -rf *o ./$(SRC)/*.o ./$(SRC)/*.so ./$(SRC)/*.gcno ./$(SRC)/*.gcov
-	rm -rf *o ./$(SRC_INCLUDE)/*.o ./$(SRC_INCLUDE)/*.so ./$(SRC_INCLUDE)/*.gcno ./$(SRC_INCLUDE)/*.gcov
-	rm -rf *o ./$(SRC_LEETCODE)/*.o ./$(SRC_LEETCODE)/*.so ./$(SRC_LEETCODE)/*.gcno ./$(SRC_LEETCODE)/*.gcov
+	rm -rf *o ./$(BUILD_DIR)/*.o ./$(BUILD_DIR)/*.so ./$(BUILD_DIR)/*.gcno ./$(BUILD_DIR)/*.gcov ./$(BUILD_DIR)/sePrep ./$(BUILD_DIR)/sePrepTests ./$(BUILD_DIR)/*.gcda
+	rm -rf *o ./$(SRC)/*.o ./$(SRC)/*.so ./$(SRC)/*.gcno ./$(SRC)/*.gcov ./$(SRC)/*.gcda
+	rm -rf *o ./$(SRC_INCLUDE)/*.o ./$(SRC_INCLUDE)/*.so ./$(SRC_INCLUDE)/*.gcno ./$(SRC_INCLUDE)/*.gcov ./$(SRC_INCLUDE)/*.gcda
+	rm -rf *o ./$(SRC_LEETCODE)/*.o ./$(SRC_LEETCODE)/*.so ./$(SRC_LEETCODE)/*.gcno ./$(SRC_LEETCODE)/*.gcov ./$(SRC_LEETCODE)/*.gcda

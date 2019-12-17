@@ -7,13 +7,18 @@
 
 using namespace std;
 
-void goToMainMenu() {
+void goToMainMenu(bool& testsRunning) {
 	bool toExit = false;
 
 	cout << "################################\n";
 	cout << "###### LeetCode Exercises ######\n";
 	cout << "################################\n\n";
 
+	if(testsRunning) {
+		std::cout << "Starting manual tests...\n";
+	}
+
+	int testCounter = 1;
 	while(!toExit) {
 		cout << "################################################################\n";
 
@@ -21,9 +26,12 @@ void goToMainMenu() {
 		cout << "\n0 - Exit\n\n";
 
 		string input;
-		getline(cin, input);
+		if(!testsRunning)
+		{
+			getline(cin, input);
+		}
 
-		switch(atoi(input.c_str())) {
+		switch(testsRunning ? testCounter : atoi(input.c_str())) {
 			case 0:
 			{
 				cout << "Exiting program...\n";
@@ -36,20 +44,36 @@ void goToMainMenu() {
 				SolutionAddTwoNumbers problem;
 				problem.runTestCases();
 				cout << "Press Enter to continue...\n";
-				getchar();
+				if(!testsRunning) {
+					getchar();
+				}
 				break;
 			}
 			default:
 			{
+				if(testsRunning)
+					testCounter = 0;
 				cout << "Input not recognized.\n\n\n";
 				break;
 			}
 		}
+		if(testsRunning && testCounter > 0)
+			testCounter++;
 	}
 }
 
-int main() 
+int main(int argc, char *argv[]) 
 {
-    goToMainMenu();
+	bool testsRunning = false;
+	if(argc > 1)
+	{
+		testsRunning = (strcmp(argv[1], "-test") == 0);
+		if(!testsRunning || argc > 2) {
+			std::cout << "Invalid Arguments... Exiting...\n";
+			return -1;
+		}
+	}		
+
+    goToMainMenu(testsRunning);
     return 0;
 }
