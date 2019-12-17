@@ -14,7 +14,7 @@ script:
   - make
   - make test
   - ./build/sePrepTests
-  - ./build/sePrep -test -error
+  - ./build/sePrep -test
 
 env:
   global:
