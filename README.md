@@ -1,5 +1,7 @@
 # Software Enineering Prep
 
+[![Build Status](https://travis-ci.com/hpnog/sePrep.svg?token=2qLgErpky1Ks2MQtavRv&branch=master)](https://travis-ci.com/hpnog/sePrep)
+
 ## LeetCode Exercise Solutions
 
  * [Two-Sum](leetCodeSolutions/src/twoSum.cpp) - 10/12/2019;
