@@ -1,34 +1,33 @@
-// Found in https://leetcode.com/problems/reverse-integer/
+#include <iostream>
+#include "inverseInteger.h"
 
-// Time Complexity:     O(log(n))
-// Space Complexity:    O(1)
-
-class SolutionInverseInteger {
-public:
-    int reverse(int x) {
-        int result = 0;
+int SolutionInverseInteger::reverse(int x) {
+    int result = 0;
+    
+    while(x != 0) {
+        int popVal = x % 10;
+        x /= 10;
         
-        while(x != 0) {
-            int popVal = x % 10;
-            x /= 10;
-            
-            // Checks for overFlow on the next phase of the cycle
-            if((result > INT_MAX / 10 || (result == INT_MAX / 10 && popVal > INT_MAX % 10)) ||
-                (result < INT_MIN / 10 || (result == INT_MIN / 10 && popVal < INT_MIN % 10)))
-                return 0;
-            
-            result = result * 10 + popVal;
-        }
-        return result;
-    };
+        // Checks for overFlow on the next phase of the cycle
+        if((result > INT_MAX / 10 || (result == INT_MAX / 10 && popVal > INT_MAX % 10)) ||
+            (result < INT_MIN / 10 || (result == INT_MIN / 10 && popVal < INT_MIN % 10)))
+            return 0;
+        
+        result = result * 10 + popVal;
+    }
+    return result;
 };
 
-/**
- * First Solution - Not the most optimized
- */
+int SolutionInverseInteger::runTestCases() {
+    std::cout << "Going to run test case 1:\n\n";
+    std::cout << "Reverse of: 85264379 is expected: 97346258 | Result is: " << reverse(85264379) << std::endl;
+    std::cout << "Reverse of: 123 is expected: 321 | Result is: " << reverse(123) << std::endl;
+    std::cout << "Reverse of: 120 is expected: 21 | Result is: " << reverse(120) << std::endl;
+    std::cout << "Reverse of: -123 is expected: -321 | Result is: " << reverse(-123) << std::endl << std::endl;
 
-//class Solution {
-//public:
+    return 0;
+}
+
 //    int reverse(int x) {
 //        if(hasOverFlowed(x))
 //            return 0;
@@ -61,4 +60,3 @@ public:
 //            return true;
 //        return false;
 //    }
-//};

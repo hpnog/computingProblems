@@ -4,6 +4,7 @@
 #include <stdio.h>
 
 #include "leetCodeSolutions/addTwoNumbers.h"
+#include "leetCodeSolutions/inverseInteger.h"
 
 using namespace std;
 
@@ -23,6 +24,7 @@ void goToMainMenu(bool& testsRunning) {
 		cout << "################################################################\n";
 
 		cout << "1 - Add Two Numbers Probem\n";
+		cout << "2 - Inverse Integer Probem\n";
 		cout << "\n0 - Exit\n\n";
 
 		string input;
@@ -42,6 +44,17 @@ void goToMainMenu(bool& testsRunning) {
 			{
 				cout << "Selecting Add Two Numbers Probem...\n";
 				SolutionAddTwoNumbers problem;
+				problem.runTestCases();
+				cout << "Press Enter to continue...\n";
+				if(!testsRunning) {
+					getchar();
+				}
+				break;
+			}
+			case 2:
+			{
+				cout << "Selecting Inverse Integer Probem...\n";
+				SolutionInverseInteger problem;
 				problem.runTestCases();
 				cout << "Press Enter to continue...\n";
 				if(!testsRunning) {

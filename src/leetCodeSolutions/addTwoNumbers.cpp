@@ -54,14 +54,12 @@ ListNode* SolutionAddTwoNumbers::addTwoNumbers(ListNode* l1, ListNode* l2, int e
 };
 
 int SolutionAddTwoNumbers::runTestCases() {
-    SolutionAddTwoNumbers solutionAddTwoNumbers;
-
-    ListNode * arg1 = solutionAddTwoNumbers.testAddTwoNumbersArg_1;
-    ListNode * arg2 = solutionAddTwoNumbers.testAddTwoNumbersArg_2;
+    ListNode * arg1 = testAddTwoNumbersArg_1;
+    ListNode * arg2 = testAddTwoNumbersArg_2;
     
-    ListNode * sol = solutionAddTwoNumbers.test_1_solution;
+    ListNode * sol = test_1_solution;
 
-    ListNode *  result_1 = solutionAddTwoNumbers.addTwoNumbers(arg1, arg2);
+    ListNode *  result_1 = addTwoNumbers(arg1, arg2);
 
     std::cout << "Going to run test case 1:\n\n";
     std::cout << "Arg 1 = " << printList(arg1) << std::endl;
