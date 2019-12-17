@@ -14,7 +14,7 @@ script:
   - make
   - make test
   - ./build/sePrepTests
-  - make clean
+#  - make clean
 
 env:
   global:
@@ -23,3 +23,4 @@ env:
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
+  - make clean
