@@ -13,5 +13,5 @@ install:
 script:
   - make
   - make test
-  - ./build/sePrerTests
+  - ./build/sePrepTests
   - make clean
