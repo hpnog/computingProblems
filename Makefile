@@ -14,6 +14,9 @@ all: build
 build: main.o addTwoNumbers.o
 	$(CC) main.o addTwoNumbers.o -o $(BUILD_TARGET)/sePrep
 
+build_git: main.o addTwoNumbers.o
+	$(CC) main.o addTwoNumbers.o -o sePrep
+
 main.o: 	 
 	$(CC) $(CFLAGS) src/main.cpp
 
