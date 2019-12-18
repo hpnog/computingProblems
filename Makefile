@@ -11,14 +11,14 @@ SRC_INCLUDE=$(SRC)/include
 BUILD_DIR := build
 
 ################### SRCS ##################
-SRCS_LEETCODE := /addTwoNumbers.cpp $(SRC_LEETCODE)/inverseInteger.cpp $(SRC_LEETCODE)/longestCommonPrefix.cpp $(SRC_LEETCODE)/longestPalindromicSubstring.cpp
+SRCS_LEETCODE := /addTwoNumbers.cpp $(SRC_LEETCODE)/inverseInteger.cpp $(SRC_LEETCODE)/longestCommonPrefix.cpp $(SRC_LEETCODE)/longestPalindromicSubstring.cpp $(SRC_LEETCODE)/longestSubstringWithoutRepeatingCharacters.cpp
 
 SRCS := $(SRC)/main.cpp $(SRCS_LEETCODE)
 SRCS_TESTS := $(SRC)/tests.cpp $(SRCS_LEETCODE)
 ############################################
 
 ################### OBJS ###################
-OBJS_LEETCODE :=  $(SRC_LEETCODE)/addTwoNumbers.o $(SRC_LEETCODE)/inverseInteger.o $(SRC_LEETCODE)/longestCommonPrefix.o $(SRC_LEETCODE)/longestPalindromicSubstring.o
+OBJS_LEETCODE :=  $(SRC_LEETCODE)/addTwoNumbers.o $(SRC_LEETCODE)/inverseInteger.o $(SRC_LEETCODE)/longestCommonPrefix.o $(SRC_LEETCODE)/longestPalindromicSubstring.o $(SRC_LEETCODE)/longestSubstringWithoutRepeatingCharacters.o
 
 OBJS := $(SRC)/main.o $(OBJS_LEETCODE)
 OBJS_TESTS := $(SRC)/tests.o $(OBJS_LEETCODE)

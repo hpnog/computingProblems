@@ -7,6 +7,7 @@
 #include "leetCodeSolutions/inverseInteger.h"
 #include "leetCodeSolutions/longestCommonPrefix.h"
 #include "leetCodeSolutions/longestPalindromicSubstring.h"
+#include "leetCodeSolutions/longestSubstringWithoutRepeatingCharacters.h"
 
 using namespace std;
 
@@ -37,6 +38,7 @@ void goToMainMenu(bool& testsRunning) {
 		cout << "2 - Inverse Integer Probem\n";
 		cout << "3 - Longest Common Prefix Probem\n";
 		cout << "4 - Longest Palindromic Substring Probem\n";
+		cout << "5 - Longest Substring Without Repeating Characters Probem\n";
 		cout << "\n0 - Exit\n\n";
 
 		string input;
@@ -73,6 +75,12 @@ void goToMainMenu(bool& testsRunning) {
 			case 4: 
 			{
 				SolutionLongestPalindromeSubstring problem;
+				runSolution(problem, testsRunning);
+				break;
+			}
+			case 5: 
+			{
+				SolutionLongestSubstringWithoutRepeatingCharacters problem;
 				runSolution(problem, testsRunning);
 				break;
 			}

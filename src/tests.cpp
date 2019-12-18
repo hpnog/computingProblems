@@ -5,6 +5,7 @@
 #include "leetCodeSolutions/addTwoNumbers.h"
 #include "leetCodeSolutions/inverseInteger.h"
 #include "leetCodeSolutions/longestCommonPrefix.h"
+#include "leetCodeSolutions/longestSubstringWithoutRepeatingCharacters.h"
 
 TEST_CASE( "Add Two Numbers Problem", "[single-file]" ) {
     SolutionAddTwoNumbers solutionAddTwoNumbers;
@@ -44,4 +45,12 @@ TEST_CASE( "Longest Common Prefix Problem", "[single-file]" ) {
 
     REQUIRE( solutionLongestCommonPrefix.longestCommonPrefix(testCase_1) == solution_1 );
     REQUIRE( solutionLongestCommonPrefix.longestCommonPrefix(testCase_2) == solution_2 );
+}
+
+TEST_CASE( "Longest Substring Without Repeating Characters Problem", "[single-file]" ) {
+    SolutionLongestSubstringWithoutRepeatingCharacters solutionLongestSubstringWithoutRepeatingCharacters;
+
+    REQUIRE( solutionLongestSubstringWithoutRepeatingCharacters.lengthOfLongestSubstring("abcabcbb") == 3 );
+    REQUIRE( solutionLongestSubstringWithoutRepeatingCharacters.lengthOfLongestSubstring("bbbbb") == 1 );
+    REQUIRE( solutionLongestSubstringWithoutRepeatingCharacters.lengthOfLongestSubstring("pwwkew") == 3 );
 }
