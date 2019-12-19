@@ -11,13 +11,10 @@ addons:
 install:
 - "[ $CXX = g++ ] && export CXX=g++-7 || true"
 script:
-  - mkdir build
-  - cd build
-  - cmake ../
+  - cmake .
   - make
-  - ./solutions
-  - ./solutions -test
-  - ./unit_tests
+  - ./bin/solutions -test
+  - ./bin/unit_tests
 
 env:
   global:

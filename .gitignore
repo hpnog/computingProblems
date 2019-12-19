@@ -33,6 +33,7 @@
 
 # Manualy added
 
+bin/
 build/
 
 .vscode/
