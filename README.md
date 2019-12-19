@@ -15,3 +15,4 @@
 | 7              | [Longest Substring Without Repeating Characters](src/leetCodeSolutions/longestSubstringWithoutRepeatingCharacters.h) | 14/12/2019  |
 | 8              | [Longest Palindromic Substring](src/leetCodeSolutions/longestPalindromicSubstring.h)                                 | 16/12/2019  |
 | 9              | [ZigZag Conversion](src/leetCodeSolutions/zigzagConversion.h)                                                        | 16/12/2019  |
+| 10             | [Valid Parenthesis](src/leetCodeSolutions/validParenthesis.h)                                                        | 19/12/2019  |

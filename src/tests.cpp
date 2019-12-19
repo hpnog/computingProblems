@@ -11,6 +11,7 @@
 #include "leetCodeSolutions/romanToInteger.h"
 #include "leetCodeSolutions/palindromeNumber.h"
 #include "leetCodeSolutions/zigzagConversion.h"
+#include "leetCodeSolutions/validParenthesis.h"
 
 TEST_CASE( "Add Two Numbers Problem", "[single-file]" ) {
     SolutionAddTwoNumbers solutionAddTwoNumbers;
@@ -130,4 +131,25 @@ TEST_CASE( "ZigZag Conversion Problem", "[single-file]" ) {
 
     REQUIRE( solutionZigZagConversion.convert(testCase_1, numRows_1) == solution_1 );
     REQUIRE( solutionZigZagConversion.convert(testCase_2, numRows_2) == solution_2 );
+}
+
+TEST_CASE( "Valid Parenthesis Problem", "[single-file]" ) {
+    SolutionValidParenthesis solutionValidParenthesis;
+   
+    std::string testCase_1 = "){";
+    bool solution_1 = false;
+
+    std::string testCase_2 = "()[()()({})]{}";
+    bool solution_2 = true;
+
+    std::string testCase_3 = "((((()))){{[]}((((((((((((((]]]";
+    bool solution_3 = false;
+
+    std::string testCase_4 = "())";
+    bool solution_4 = false;
+
+    REQUIRE( solutionValidParenthesis.isValid(testCase_1) == solution_1 );
+    REQUIRE( solutionValidParenthesis.isValid(testCase_2) == solution_2 );
+    REQUIRE( solutionValidParenthesis.isValid(testCase_3) == solution_3 );
+    REQUIRE( solutionValidParenthesis.isValid(testCase_4) == solution_4 );
 }

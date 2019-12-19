@@ -12,6 +12,7 @@
 #include "leetCodeSolutions/romanToInteger.h"
 #include "leetCodeSolutions/palindromeNumber.h"
 #include "leetCodeSolutions/zigzagConversion.h"
+#include "leetCodeSolutions/validParenthesis.h"
 
 using namespace std;
 
@@ -38,16 +39,17 @@ void goToMainMenu(bool& testsRunning) {
 	while(!toExit) {
 		cout << "################################################################\n";
 
-		cout << "1 - Add Two Numbers Probem\n";
-		cout << "2 - Inverse Integer Probem\n";
-		cout << "3 - Longest Common Prefix Probem\n";
-		cout << "4 - Longest Palindromic Substring Probem\n";
-		cout << "5 - Longest Substring Without Repeating Characters Probem\n";
-		cout << "6 - Two Sum Probem\n";
-		cout << "7 - Roman to Integer Probem\n";
-		cout << "8 - Palindrome Number Probem\n";
-		cout << "9 - ZigZag Conversion Probem\n";
-		cout << "\n0 - Exit\n\n";
+		cout << "1  - Add Two Numbers Probem\n";
+		cout << "2  - Inverse Integer Probem\n";
+		cout << "3  - Longest Common Prefix Probem\n";
+		cout << "4  - Longest Palindromic Substring Probem\n";
+		cout << "5  - Longest Substring Without Repeating Characters Probem\n";
+		cout << "6  - Two Sum Probem\n";
+		cout << "7  - Roman to Integer Probem\n";
+		cout << "8  - Palindrome Number Probem\n";
+		cout << "9  - ZigZag Conversion Probem\n";
+		cout << "10 - Valid Parenthesis Probem\n";
+		cout << "\n0  - Exit\n\n";
 
 		string input;
 		if(!testsRunning)
@@ -113,6 +115,12 @@ void goToMainMenu(bool& testsRunning) {
 			case 9: 
 			{
 				SolutionZigZagConversion problem;
+				runSolution(problem, testsRunning);
+				break;
+			}
+			case 10: 
+			{
+				SolutionValidParenthesis problem;
 				runSolution(problem, testsRunning);
 				break;
 			}
