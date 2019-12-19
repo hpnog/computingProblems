@@ -10,6 +10,7 @@
 #include "leetCodeSolutions/longestSubstringWithoutRepeatingCharacters.h"
 #include "leetCodeSolutions/twoSum.h"
 #include "leetCodeSolutions/romanToInteger.h"
+#include "leetCodeSolutions/palindromeNumber.h"
 
 using namespace std;
 
@@ -43,6 +44,7 @@ void goToMainMenu(bool& testsRunning) {
 		cout << "5 - Longest Substring Without Repeating Characters Probem\n";
 		cout << "6 - Two Sum Probem\n";
 		cout << "7 - Roman to Integer Probem\n";
+		cout << "8 - Palindrome Number Probem\n";
 		cout << "\n0 - Exit\n\n";
 
 		string input;
@@ -97,6 +99,12 @@ void goToMainMenu(bool& testsRunning) {
 			case 7: 
 			{
 				SolutionRomanToInteger problem;
+				runSolution(problem, testsRunning);
+				break;
+			}
+			case 8: 
+			{
+				SolutionPalindromeNumber problem;
 				runSolution(problem, testsRunning);
 				break;
 			}

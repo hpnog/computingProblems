@@ -9,6 +9,7 @@
 #include "leetCodeSolutions/longestSubstringWithoutRepeatingCharacters.h"
 #include "leetCodeSolutions/twoSum.h"
 #include "leetCodeSolutions/romanToInteger.h"
+#include "leetCodeSolutions/palindromeNumber.h"
 
 TEST_CASE( "Add Two Numbers Problem", "[single-file]" ) {
     SolutionAddTwoNumbers solutionAddTwoNumbers;
@@ -105,4 +106,12 @@ TEST_CASE( "Roman To Integer Problem", "[single-file]" ) {
     REQUIRE( solutionRomanToInteger.romanToInt(testCase_3) == solution_3 );
     REQUIRE( solutionRomanToInteger.romanToInt(testCase_4) == solution_4 );
     REQUIRE( solutionRomanToInteger.romanToInt(testCase_5) == solution_5 );
+}
+
+TEST_CASE( "Palindrome Number Problem", "[single-file]" ) {
+    SolutionPalindromeNumber solutionPalindromeNumber;
+   
+    REQUIRE( solutionPalindromeNumber.isPalindrome(121) == true );
+    REQUIRE( solutionPalindromeNumber.isPalindrome(-121) == false );
+    REQUIRE( solutionPalindromeNumber.isPalindrome(10) == false );
 }
