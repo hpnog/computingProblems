@@ -25,8 +25,8 @@ add_executable(solutions ${sources}) # ${data})
 add_executable(unit_tests ${sources_test}) # ${data})
 
 # Just for example add some compiler flags.
-target_compile_options(solutions PUBLIC -std=c++1y -Wall)
-target_compile_options(unit_tests PUBLIC -std=c++1y -Wall)
+target_compile_options(solutions PUBLIC -std=c++11 -Wall -fprofile-arcs -ftest-coverage)
+target_compile_options(unit_tests PUBLIC -std=c++11 -Wall -fprofile-arcs -ftest-coverage)
 
 # This allows to include files relative to the root of the src directory with a <> pair
 target_include_directories(solutions PUBLIC src/include)
@@ -44,10 +44,15 @@ target_include_directories(unit_tests PUBLIC src/include)
 # that we need to link into the program.
 # find_package(Boost 1.36.0 COMPONENTS filesystem system REQUIRED)
 
-# target_link_libraries(solutions PUBLIC
-#   ${Boost_LIBRARIES}
-  # here you can add any library dependencies
-# )
+target_link_libraries(
+    solutions
+    gcov
+)
+
+target_link_libraries(
+    unit_tests
+    gcov
+)
 
 ###############################################################################
 ## testing ####################################################################
