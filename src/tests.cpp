@@ -8,6 +8,7 @@
 #include "leetCodeSolutions/longestPalindromicSubstring.h"
 #include "leetCodeSolutions/longestSubstringWithoutRepeatingCharacters.h"
 #include "leetCodeSolutions/twoSum.h"
+#include "leetCodeSolutions/romanToInteger.h"
 
 TEST_CASE( "Add Two Numbers Problem", "[single-file]" ) {
     SolutionAddTwoNumbers solutionAddTwoNumbers;
@@ -79,4 +80,29 @@ TEST_CASE( "Two Sum Problem", "[single-file]" ) {
     std::vector<int> solution_1 = {0, 1};
 
     REQUIRE( solutionTwoSum.twoSum(testCase_1, target_1) == solution_1 );
+}
+
+TEST_CASE( "Roman To Integer Problem", "[single-file]" ) {
+    SolutionRomanToInteger solutionRomanToInteger;
+
+    std::string testCase_1 = "III";
+    int solution_1 = 3;
+    
+    std::string testCase_2 = "IV";
+    int solution_2 = 4;
+    
+    std::string testCase_3 = "IX";
+    int solution_3 = 9;
+    
+    std::string testCase_4 = "LVIII";
+    int solution_4 = 58;
+    
+    std::string testCase_5 = "MCMXCIV";
+    int solution_5 = 1994;
+   
+    REQUIRE( solutionRomanToInteger.romanToInt(testCase_1) == solution_1 );
+    REQUIRE( solutionRomanToInteger.romanToInt(testCase_2) == solution_2 );
+    REQUIRE( solutionRomanToInteger.romanToInt(testCase_3) == solution_3 );
+    REQUIRE( solutionRomanToInteger.romanToInt(testCase_4) == solution_4 );
+    REQUIRE( solutionRomanToInteger.romanToInt(testCase_5) == solution_5 );
 }
