@@ -23,11 +23,8 @@ std::string SolutionZigZagConversion::convert(std::string s, int numRows) {
 };
 
 int SolutionZigZagConversion::runTestCases() {
-    std::cout << "Selecting Zig Zag Conversion Problem...\n";
-    std::cout << "Going to run test cases:\n\n";
-
     std::string testCase_1 = "PAYPALISHIRING";
-    int numRows_1 = 2;
+    int numRows_1 = 3;
     std::string solution_1 = "PAHNAPLSIIGYIR";
 
     std::string testCase_2 = "PAYPALISHIRING";
