@@ -11,6 +11,7 @@
 #include "leetCodeSolutions/twoSum.h"
 #include "leetCodeSolutions/romanToInteger.h"
 #include "leetCodeSolutions/palindromeNumber.h"
+#include "leetCodeSolutions/zigzagConversion.h"
 
 using namespace std;
 
@@ -45,6 +46,7 @@ void goToMainMenu(bool& testsRunning) {
 		cout << "6 - Two Sum Probem\n";
 		cout << "7 - Roman to Integer Probem\n";
 		cout << "8 - Palindrome Number Probem\n";
+		cout << "9 - ZigZag Conversion Probem\n";
 		cout << "\n0 - Exit\n\n";
 
 		string input;
@@ -105,6 +107,12 @@ void goToMainMenu(bool& testsRunning) {
 			case 8: 
 			{
 				SolutionPalindromeNumber problem;
+				runSolution(problem, testsRunning);
+				break;
+			}
+			case 9: 
+			{
+				SolutionZigZagConversion problem;
 				runSolution(problem, testsRunning);
 				break;
 			}

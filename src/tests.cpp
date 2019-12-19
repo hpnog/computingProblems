@@ -10,6 +10,7 @@
 #include "leetCodeSolutions/twoSum.h"
 #include "leetCodeSolutions/romanToInteger.h"
 #include "leetCodeSolutions/palindromeNumber.h"
+#include "leetCodeSolutions/zigzagConversion.h"
 
 TEST_CASE( "Add Two Numbers Problem", "[single-file]" ) {
     SolutionAddTwoNumbers solutionAddTwoNumbers;
@@ -114,4 +115,19 @@ TEST_CASE( "Palindrome Number Problem", "[single-file]" ) {
     REQUIRE( solutionPalindromeNumber.isPalindrome(121) == true );
     REQUIRE( solutionPalindromeNumber.isPalindrome(-121) == false );
     REQUIRE( solutionPalindromeNumber.isPalindrome(10) == false );
+}
+
+TEST_CASE( "ZigZag Conversion Problem", "[single-file]" ) {
+    SolutionZigZagConversion solutionZigZagConversion;
+   
+    std::string testCase_1 = "PAYPALISHIRING";
+    int numRows_1 = 2;
+    std::string solution_1 = "PAHNAPLSIIGYIR";
+
+    std::string testCase_2 = "PAYPALISHIRING";
+    int numRows_2 = 4;
+    std::string solution_2 = "PINALSIGYAHRPI";
+
+    REQUIRE( solutionZigZagConversion.convert(testCase_1, numRows_1) == solution_1 );
+    REQUIRE( solutionZigZagConversion.convert(testCase_2, numRows_2) == solution_2 );
 }
