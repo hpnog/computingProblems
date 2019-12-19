@@ -17,7 +17,7 @@ SRCS_LEETCODE := $(SRCS_LEETCODE) $(SRC_LEETCODE)/longestCommonPrefix.cpp
 SRCS_LEETCODE := $(SRCS_LEETCODE) $(SRC_LEETCODE)/longestPalindromicSubstring.cpp 
 SRCS_LEETCODE := $(SRCS_LEETCODE) $(SRC_LEETCODE)/longestSubstringWithoutRepeatingCharacters.cpp
 SRCS_LEETCODE := $(SRCS_LEETCODE) $(SRC_LEETCODE)/twoSum.cpp
-SRCS_LEETCODE := $(SRCS_LEETCODE) $(SRC_LEETCODE)/romanInteger.cpp
+SRCS_LEETCODE := $(SRCS_LEETCODE) $(SRC_LEETCODE)/romanToInteger.cpp
 SRCS_LEETCODE := $(SRCS_LEETCODE) $(SRC_LEETCODE)/palindromeNumber.cpp
 SRCS_LEETCODE := $(SRCS_LEETCODE) $(SRC_LEETCODE)/zigzagConversion.cpp
 
@@ -32,7 +32,7 @@ OBJS_LEETCODE := $(OBJS_LEETCODE) $(SRC_LEETCODE)/longestCommonPrefix.o
 OBJS_LEETCODE := $(OBJS_LEETCODE) $(SRC_LEETCODE)/longestPalindromicSubstring.o 
 OBJS_LEETCODE := $(OBJS_LEETCODE) $(SRC_LEETCODE)/longestSubstringWithoutRepeatingCharacters.o
 OBJS_LEETCODE := $(OBJS_LEETCODE) $(SRC_LEETCODE)/twoSum.o
-OBJS_LEETCODE := $(OBJS_LEETCODE) $(SRC_LEETCODE)/romanInteger.o
+OBJS_LEETCODE := $(OBJS_LEETCODE) $(SRC_LEETCODE)/romanToInteger.o
 OBJS_LEETCODE := $(OBJS_LEETCODE) $(SRC_LEETCODE)/palindromeNumber.o
 OBJS_LEETCODE := $(OBJS_LEETCODE) $(SRC_LEETCODE)/zigzagConversion.o
 
