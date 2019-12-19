@@ -4,7 +4,7 @@
 // Space Complexity:    O(1)
 
 #include <iostream>
-#include<vector>
+#include <vector>
 
 #include "problemInterface.h"
 

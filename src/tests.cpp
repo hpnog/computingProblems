@@ -5,7 +5,9 @@
 #include "leetCodeSolutions/addTwoNumbers.h"
 #include "leetCodeSolutions/inverseInteger.h"
 #include "leetCodeSolutions/longestCommonPrefix.h"
+#include "leetCodeSolutions/longestPalindromicSubstring.h"
 #include "leetCodeSolutions/longestSubstringWithoutRepeatingCharacters.h"
+#include "leetCodeSolutions/twoSum.h"
 
 TEST_CASE( "Add Two Numbers Problem", "[single-file]" ) {
     SolutionAddTwoNumbers solutionAddTwoNumbers;
@@ -47,10 +49,34 @@ TEST_CASE( "Longest Common Prefix Problem", "[single-file]" ) {
     REQUIRE( solutionLongestCommonPrefix.longestCommonPrefix(testCase_2) == solution_2 );
 }
 
+TEST_CASE( "Longest Palindromic Substring Problem", "[single-file]" ) {
+    SolutionLongestPalindromeSubstring solutionLongestPalindromeSubstring;
+
+    std::string testCase_1 = "babad";
+    std::string solution_1 = "bab";
+    
+    std::string testCase_2 = "cbbd";
+    std::string solution_2 = "bb";
+
+    REQUIRE( solutionLongestPalindromeSubstring.longestPalindrome(testCase_1) == solution_1 );
+    REQUIRE( solutionLongestPalindromeSubstring.longestPalindrome(testCase_2) == solution_2 );
+}
+
+
 TEST_CASE( "Longest Substring Without Repeating Characters Problem", "[single-file]" ) {
     SolutionLongestSubstringWithoutRepeatingCharacters solutionLongestSubstringWithoutRepeatingCharacters;
 
     REQUIRE( solutionLongestSubstringWithoutRepeatingCharacters.lengthOfLongestSubstring("abcabcbb") == 3 );
     REQUIRE( solutionLongestSubstringWithoutRepeatingCharacters.lengthOfLongestSubstring("bbbbb") == 1 );
     REQUIRE( solutionLongestSubstringWithoutRepeatingCharacters.lengthOfLongestSubstring("pwwkew") == 3 );
+}
+
+TEST_CASE( "Two Sum Problem", "[single-file]" ) {
+    SolutionTwoSum solutionTwoSum;
+
+    std::vector<int> testCase_1 = {2, 7, 11, 15};
+    int target_1 = 9;
+    std::vector<int> solution_1 = {0, 1};
+
+    REQUIRE( solutionTwoSum.twoSum(testCase_1, target_1) == solution_1 );
 }

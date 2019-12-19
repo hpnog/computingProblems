@@ -8,6 +8,7 @@
 #include "leetCodeSolutions/longestCommonPrefix.h"
 #include "leetCodeSolutions/longestPalindromicSubstring.h"
 #include "leetCodeSolutions/longestSubstringWithoutRepeatingCharacters.h"
+#include "leetCodeSolutions/twoSum.h"
 
 using namespace std;
 
@@ -39,6 +40,7 @@ void goToMainMenu(bool& testsRunning) {
 		cout << "3 - Longest Common Prefix Probem\n";
 		cout << "4 - Longest Palindromic Substring Probem\n";
 		cout << "5 - Longest Substring Without Repeating Characters Probem\n";
+		cout << "6 - Two Sum Probem\n";
 		cout << "\n0 - Exit\n\n";
 
 		string input;
@@ -81,6 +83,12 @@ void goToMainMenu(bool& testsRunning) {
 			case 5: 
 			{
 				SolutionLongestSubstringWithoutRepeatingCharacters problem;
+				runSolution(problem, testsRunning);
+				break;
+			}
+			case 6: 
+			{
+				SolutionTwoSum problem;
 				runSolution(problem, testsRunning);
 				break;
 			}
