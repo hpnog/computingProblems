@@ -25,6 +25,6 @@ jobs:
      - name: make test
        run: make test
      - name: run test
-       run: ./build/sePrepTests
+       run: ./build/computingProblemsTests
      - name: make clean
        run: make clean

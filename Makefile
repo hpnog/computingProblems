@@ -45,22 +45,22 @@ $(SRC)/%.o: $(SRC)/%.cpp
 $(SRC_LEETCODE)/%.o: $(SRC_LEETCODE)/%.cpp
 	$(CC) $(CFLAGS_COVER) -c $< -o $@
 
-$(BUILD_DIR)/sePrep: $(OBJS)
+$(BUILD_DIR)/computingProblems: $(OBJS)
 	mkdir -p $(@D)
 	$(CC) $(CFLAGS_COVER) $^ -o $@
 
-$(BUILD_DIR)/sePrepTests: $(OBJS_TESTS)
+$(BUILD_DIR)/computingProblemsTests: $(OBJS_TESTS)
 	mkdir -p $(@D)
 	$(CC) $(CFLAGS_COVER) $^ -o $@
 
-all: sePrep
+all: computingProblems
 
-test:$(BUILD_DIR)/sePrepTests
+test:$(BUILD_DIR)/computingProblemsTests
 
-sePrep: $(BUILD_DIR)/sePrep
+computingProblems: $(BUILD_DIR)/computingProblems
 
 clean:
-	rm -rf *o ./$(BUILD_DIR)/*.o ./$(BUILD_DIR)/*.so ./$(BUILD_DIR)/*.gcno ./$(BUILD_DIR)/*.gcov ./$(BUILD_DIR)/sePrep ./$(BUILD_DIR)/sePrepTests ./$(BUILD_DIR)/*.gcda
+	rm -rf *o ./$(BUILD_DIR)/*.o ./$(BUILD_DIR)/*.so ./$(BUILD_DIR)/*.gcno ./$(BUILD_DIR)/*.gcov ./$(BUILD_DIR)/computingProblems ./$(BUILD_DIR)/computingProblemsTests ./$(BUILD_DIR)/*.gcda
 	rm -rf *o ./$(SRC)/*.o ./$(SRC)/*.so ./$(SRC)/*.gcno ./$(SRC)/*.gcov ./$(SRC)/*.gcda
 	rm -rf *o ./$(SRC_INCLUDE)/*.o ./$(SRC_INCLUDE)/*.so ./$(SRC_INCLUDE)/*.gcno ./$(SRC_INCLUDE)/*.gcov ./$(SRC_INCLUDE)/*.gcda
 	rm -rf *o ./$(SRC_LEETCODE)/*.o ./$(SRC_LEETCODE)/*.so ./$(SRC_LEETCODE)/*.gcno ./$(SRC_LEETCODE)/*.gcov ./$(SRC_LEETCODE)/*.gcda
