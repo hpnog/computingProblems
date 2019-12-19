@@ -4,14 +4,14 @@
 
 ## LeetCode Exercise Solutions
 
- * [Two-Sum](leetCodeSolutions/src/twoSum.cpp) - 10/12/2019;
- * [Inverse Integer](leetCodeSolutions/src/inverseInteger.cpp) - 11/12/2019;
- * [Palindrome Number](leetCodeSolutions/src/palindromeNumber.cpp) - 14/12/2019;
- * [Roman To Integer](leetCodeSolutions/src/romanToInteger.cpp) - 14/12/2019;
- * [Longest Common Prefix](leetCodeSolutions/src/longestCommonPrefix.cpp) - 14/12/2019;
- * [Add Two Numbers](leetCodeSolutions/src/addTwoNumbers.cpp) - 14/12/2019;
- * [Longest Substring Without Repeating Characters](leetCodeSolutions/src/longestSubstringWithoutRepeatingCharacters.cpp) - 14/12/2019;
- * [Longest Palindromic Substring](leetCodeSolutions/src/longestPalindromicSubstring.cpp) - 16/12/2019;
- * [ZigZag Conversion](leetCodeSolutions/src/zigzagConversion.cpp) - 16/12/2019;
-  *  
- 
+| Number         | Problem                                                                                                              | Solved Date |
+| :------------- | :------------------------------------------------------------------------------------------------------------------- | :---------- |
+| 1              | [Two-Sum](src/leetCodeSolutions/twoSum.h)                                                                            | 10/12/2019  |
+| 2              | [Inverse Integer](src/leetCodeSolutions/inverseInteger.h)                                                            | 11/12/2019  |
+| 3              | [Palindrome Number](src/leetCodeSolutions/palindromeNumber.h)                                                        | 14/12/2019  |
+| 4              | [Roman To Integer](src/leetCodeSolutions/romanToInteger.h)                                                           | 14/12/2019  |
+| 5              | [Longest Common Prefix](src/leetCodeSolutions/longestCommonPrefix.h)                                                 | 14/12/2019  |
+| 6              | [Add Two Numbers](src/leetCodeSolutions/addTwoNumbers.h)                                                             | 14/12/2019  |
+| 7              | [Longest Substring Without Repeating Characters](src/leetCodeSolutions/longestSubstringWithoutRepeatingCharacters.h) | 14/12/2019  |
+| 8              | [Longest Palindromic Substring](src/leetCodeSolutions/longestPalindromicSubstring.h)                                 | 16/12/2019  |
+| 9              | [ZigZag Conversion](src/leetCodeSolutions/zigzagConversion.h)                                                        | 16/12/2019  |
