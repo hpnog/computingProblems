@@ -1,6 +1,6 @@
 # Software Engineering Prep
 
-[![Build Status](https://travis-ci.com/hpnog/computingProblems.svg?token=2qLgErpky1Ks2MQtavRv&branch=master)](https://travis-ci.com/hpnog/computingProblems) | [![codecov](https://codecov.io/gh/hpnog/computingProblems/branch/master/graph/badge.svg?token=YCa575URD4)](https://codecov.io/gh/hpnog/computingProblems)
+[![Build Status](https://travis-ci.com/hpnog/computingProblems.svg?branch=master)](https://travis-ci.com/hpnog/computingProblems) | [![codecov](https://codecov.io/gh/hpnog/computingProblems/branch/master/graph/badge.svg?token=YCa575URD4)](https://codecov.io/gh/hpnog/computingProblems)
 
 
 
