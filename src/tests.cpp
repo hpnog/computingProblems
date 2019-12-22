@@ -12,6 +12,7 @@
 #include "leetCodeSolutions/palindromeNumber.h"
 #include "leetCodeSolutions/zigzagConversion.h"
 #include "leetCodeSolutions/validParenthesis.h"
+#include "leetCodeSolutions/mergeTwoSortedLists.h"
 
 TEST_CASE( "Add Two Numbers Problem", "[single-file]" ) {
     SolutionAddTwoNumbers solutionAddTwoNumbers;
@@ -152,4 +153,23 @@ TEST_CASE( "Valid Parenthesis Problem", "[single-file]" ) {
     REQUIRE( solutionValidParenthesis.isValid(testCase_2) == solution_2 );
     REQUIRE( solutionValidParenthesis.isValid(testCase_3) == solution_3 );
     REQUIRE( solutionValidParenthesis.isValid(testCase_4) == solution_4 );
+}
+
+TEST_CASE( "Merge Two Sorted Lists Problem", "[single-file]" ) {
+    SolutionMergeTwoSortedLists solutionMergeTwoSortedLists;
+
+    ListNode * arg1 = solutionMergeTwoSortedLists.testMergeTwoSortedListsArg_1;
+    ListNode * arg2 = solutionMergeTwoSortedLists.testMergeTwoSortedListsArg_2;
+    
+    ListNode * sol = solutionMergeTwoSortedLists.test_1_solution;
+    ListNode * wrongSol = solutionMergeTwoSortedLists.test_1_solution;
+
+    ListNode *  result_1 = solutionMergeTwoSortedLists.mergeTwoLists(arg1, arg2);
+
+    // Right solution
+    REQUIRE( sol->compare(result_1) );
+
+    // Change solution making it wrong and comparing again
+    wrongSol->val--;
+    REQUIRE( !sol->compare(result_1) );
 }

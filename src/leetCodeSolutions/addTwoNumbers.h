@@ -12,6 +12,9 @@
 
 #include "problemInterface.h"
 
+
+#ifndef LISTNODE
+#define LISTNODE
 struct ListNode {
     int val;
     ListNode *next;
@@ -19,6 +22,7 @@ struct ListNode {
 
     bool compare(ListNode * y);
 };
+#endif // LISTNODE
 
 class SolutionAddTwoNumbers : public ProblemInterface {
     public:
