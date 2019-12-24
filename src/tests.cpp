@@ -13,6 +13,7 @@
 #include "leetCodeSolutions/zigzagConversion.h"
 #include "leetCodeSolutions/validParenthesis.h"
 #include "leetCodeSolutions/mergeTwoSortedLists.h"
+#include "leetCodeSolutions/removeDuplicatesFromSortedArray.h"
 
 TEST_CASE( "Add Two Numbers Problem", "[single-file]" ) {
     SolutionAddTwoNumbers solutionAddTwoNumbers;
@@ -172,4 +173,14 @@ TEST_CASE( "Merge Two Sorted Lists Problem", "[single-file]" ) {
     // Change solution making it wrong and comparing again
     wrongSol->val--;
     REQUIRE( !sol->compare(result_1) );
+}
+
+TEST_CASE( "Remove Duplicates From Sorted Array Problem", "[single-file]" ) {
+    SolutionRemoveDuplicatesFromSortedArray solutionRemoveDuplicatesFromSortedArray;
+
+    std::vector<int> arg1 = solutionRemoveDuplicatesFromSortedArray.testCase_1;
+    std::vector<int> arg2 = solutionRemoveDuplicatesFromSortedArray.testCase_2;
+
+    REQUIRE( solutionRemoveDuplicatesFromSortedArray.removeDuplicates(arg1) == solutionRemoveDuplicatesFromSortedArray.solution_1 );
+    REQUIRE( solutionRemoveDuplicatesFromSortedArray.removeDuplicates(arg2) == solutionRemoveDuplicatesFromSortedArray.solution_2 );
 }

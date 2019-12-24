@@ -14,6 +14,7 @@
 #include "leetCodeSolutions/zigzagConversion.h"
 #include "leetCodeSolutions/validParenthesis.h"
 #include "leetCodeSolutions/mergeTwoSortedLists.h"
+#include "leetCodeSolutions/removeDuplicatesFromSortedArray.h"
 
 using namespace std;
 
@@ -51,6 +52,7 @@ void goToMainMenu(bool& testsRunning) {
 		cout << "9  - ZigZag Conversion Probem\n";
 		cout << "10 - Valid Parenthesis Probem\n";
 		cout << "11 - Merge Two Sorted Lists Probem\n";
+		cout << "12 - Remove Duplicates From Sorted Array Probem\n";
 		cout << "\n0  - Exit\n\n";
 
 		string input;
@@ -129,6 +131,12 @@ void goToMainMenu(bool& testsRunning) {
 			case 11: 
 			{
 				SolutionMergeTwoSortedLists problem;
+				runSolution(problem, testsRunning);
+				break;
+			}
+			case 12: 
+			{
+				SolutionRemoveDuplicatesFromSortedArray problem;
 				runSolution(problem, testsRunning);
 				break;
 			}
