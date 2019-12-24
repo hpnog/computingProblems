@@ -142,7 +142,6 @@ void goToMainMenu(bool& testsRunning) {
 				runSolution(problem, testsRunning);
 				break;
 			}
-
 			case 13: 
 			{
 				SolutionAtoi problem;
