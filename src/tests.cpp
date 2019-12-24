@@ -14,6 +14,7 @@
 #include "leetCodeSolutions/validParenthesis.h"
 #include "leetCodeSolutions/mergeTwoSortedLists.h"
 #include "leetCodeSolutions/removeDuplicatesFromSortedArray.h"
+#include "leetCodeSolutions/stringToInteger_atoi.h"
 
 TEST_CASE( "Add Two Numbers Problem", "[single-file]" ) {
     SolutionAddTwoNumbers solutionAddTwoNumbers;
@@ -183,4 +184,16 @@ TEST_CASE( "Remove Duplicates From Sorted Array Problem", "[single-file]" ) {
 
     REQUIRE( solutionRemoveDuplicatesFromSortedArray.removeDuplicates(arg1) == solutionRemoveDuplicatesFromSortedArray.solution_1 );
     REQUIRE( solutionRemoveDuplicatesFromSortedArray.removeDuplicates(arg2) == solutionRemoveDuplicatesFromSortedArray.solution_2 );
+}
+
+
+TEST_CASE( "String to Integer - atoi Problem", "[single-file]" ) {
+    SolutionAtoi solutionAtoi;
+
+    REQUIRE( solutionAtoi.myAtoi(solutionAtoi.testCase_1) == solutionAtoi.solution_1 );
+    REQUIRE( solutionAtoi.myAtoi(solutionAtoi.testCase_2) == solutionAtoi.solution_2 );
+    REQUIRE( solutionAtoi.myAtoi(solutionAtoi.testCase_3) == solutionAtoi.solution_3 );
+    REQUIRE( solutionAtoi.myAtoi(solutionAtoi.testCase_4) == solutionAtoi.solution_4 );
+    REQUIRE( solutionAtoi.myAtoi(solutionAtoi.testCase_5) == solutionAtoi.solution_5 );
+    REQUIRE( solutionAtoi.myAtoi(solutionAtoi.testCase_6) == solutionAtoi.solution_6 );
 }
