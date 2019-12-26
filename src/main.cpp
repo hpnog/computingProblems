@@ -16,6 +16,7 @@
 #include "leetCodeSolutions/mergeTwoSortedLists.h"
 #include "leetCodeSolutions/removeDuplicatesFromSortedArray.h"
 #include "leetCodeSolutions/stringToInteger_atoi.h"
+#include "leetCodeSolutions/containerWithMostWater.h"
 
 using namespace std;
 
@@ -55,6 +56,7 @@ void goToMainMenu(bool& testsRunning) {
 		cout << "11 - Merge Two Sorted Lists Probem\n";
 		cout << "12 - Remove Duplicates From Sorted Array Probem\n";
 		cout << "13 - String To Integer Probem\n";
+		cout << "14 - Container With Most Water Probem\n";
 		cout << "\n0  - Exit\n\n";
 
 		string input;
@@ -145,6 +147,12 @@ void goToMainMenu(bool& testsRunning) {
 			case 13: 
 			{
 				SolutionAtoi problem;
+				runSolution(problem, testsRunning);
+				break;
+			}
+			case 14: 
+			{
+				SolutionContainerWithMostWater problem;
 				runSolution(problem, testsRunning);
 				break;
 			}
