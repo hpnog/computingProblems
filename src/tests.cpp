@@ -15,6 +15,7 @@
 #include "leetCodeSolutions/mergeTwoSortedLists.h"
 #include "leetCodeSolutions/removeDuplicatesFromSortedArray.h"
 #include "leetCodeSolutions/stringToInteger_atoi.h"
+#include "leetCodeSolutions/containerWithMostWater.h"
 
 TEST_CASE( "Add Two Numbers Problem", "[single-file]" ) {
     SolutionAddTwoNumbers solutionAddTwoNumbers;
@@ -196,4 +197,10 @@ TEST_CASE( "String to Integer - atoi Problem", "[single-file]" ) {
     REQUIRE( solutionAtoi.myAtoi(solutionAtoi.testCase_4) == solutionAtoi.solution_4 );
     REQUIRE( solutionAtoi.myAtoi(solutionAtoi.testCase_5) == solutionAtoi.solution_5 );
     REQUIRE( solutionAtoi.myAtoi(solutionAtoi.testCase_6) == solutionAtoi.solution_6 );
+}
+
+TEST_CASE( "Container With Most Water Problem", "[single-file]" ) {
+    SolutionContainerWithMostWater solutionContainerWithMostWater;
+
+    REQUIRE( solutionContainerWithMostWater.maxArea(solutionContainerWithMostWater.testCase_1) == solutionContainerWithMostWater.solution_1 );
 }
