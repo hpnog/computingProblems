@@ -19,6 +19,7 @@ script:
   - ./bin/solutions -test
   - ./bin/unit_tests
   - cd leetCodeSolutionsKotlin
+  - ./gradlew jacocoTestReport
   - ./gradlew build
 
 env:
