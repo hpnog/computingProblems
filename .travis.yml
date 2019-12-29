@@ -22,6 +22,8 @@ matrix:
       script:
         - cd leetCodeSolutionsKotlin
         - ./gradlew build
+        - ./gradlew check
+        - ./gradlew codeCoverageReport
 
 before_install:
   - chmod +x ./leetCodeSolutionsKotlin/gradlew
@@ -34,5 +36,4 @@ env:
 after_success:
   # Run bash script to upload code coverage files
   - bash <(curl -s https://codecov.io/bash)
-  - make clean
   
