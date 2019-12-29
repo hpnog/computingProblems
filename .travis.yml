@@ -1,5 +1,5 @@
 sudo: false
-language: cpp
+language: cpp, java
 compiler:
   - gcc
 addons:
@@ -10,11 +10,16 @@ addons:
     - g++-7
 install:
 - "[ $CXX = g++ ] && export CXX=g++-7 || true"
+before_install:
+  - chmod +x ./leetCodeSolutionsKotlin/gradlew
+  - chmod +x ./leetCodeSolutionsKotlin/gradle/wrapper/gradle-wrapper.jar
 script:
   - cmake .
   - make
   - ./bin/solutions -test
   - ./bin/unit_tests
+  - cd leetCodeSolutionsKotlin
+  - ./gradlew build
 
 env:
   global:
