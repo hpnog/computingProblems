@@ -1,8 +1,18 @@
 # Software Engineering Prep
 
-[![Build Status](https://travis-ci.com/hpnog/computingProblems.svg?branch=master)](https://travis-ci.com/hpnog/computingProblems) | [![codecov](https://codecov.io/gh/hpnog/computingProblems/branch/master/graph/badge.svg)](https://codecov.io/gh/hpnog/computingProblems)
+<div>
+<a href="https://travis-ci.com/hpnog/computingProblems">
+    <img align="left" hspace="10" src="https://travis-ci.com/hpnog/computingProblems.svg?branch=master">
+</a>
+<a href="https://codecov.io/gh/hpnog/computingProblems">
+    <img align="right" hspace="10" src="https://codecov.io/gh/hpnog/computingProblems/branch/master/graph/badge.svg" />
+</a>
+</div><br/>
 
-A repo dedicated to solving computing problems with full Continuous Integration and Test Coverage. Currently implementing solutions in C++ and Kotlin.
+<img align="left" hspace="10" height="50" src="./res/cppIcon.png"><img align="left" hspace="10" height="50" src="./res/kotlinIcon.png"><img align="right" hspace="10" height="50" src="./res/leetcodeIcon.png">
+</div><br/><br/><br/>
+
+A repository dedicated to solving computing problems with full Continuous Integration and Test Coverage. Currently implementing solutions in C++ and Kotlin.
 
 > *[Issue with Kotlin code coverage](https://github.com/hpnog/computingProblems/issues/6)*
 
