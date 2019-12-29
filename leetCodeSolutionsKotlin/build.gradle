@@ -27,12 +27,43 @@ compileTestKotlin {
 
 jacoco {
     toolVersion = "0.8.5"
-    reportsDir = file("./customJacocoReportDir")
+    reportsDir = file("./reports")
 }
 
-tasks.jacocoTestReport {
+jacocoTestReport {
+    group = "Reporting"
+    description = "Generate Jacoco coverage reports for Debug build"
+
     reports {
-        html.destination = file("${buildDir}/jacocoHtml")
+        xml.enabled = true
+        html.enabled = true
     }
-}
 
+    // what to exclude from coverage report
+    // UI, "noise", generated classes, platform classes, etc. 
+    def excludes = [
+            '**/R.class',
+            '**/R$*.class',
+            '**/*$ViewInjector*.*',
+            '**/BuildConfig.*',
+            '**/Manifest*.*',
+            '**/*Test*.*',
+            'android/**/*.*',
+            '**/*Fragment.*',
+            '**/*Activity.*'
+    ]
+    // generated classes
+    classDirectories = fileTree(
+            dir: "$buildDir/intermediates/classes/debug",
+            excludes: excludes
+    ) + fileTree(
+            dir: "$buildDir/tmp/kotlin-classes/debug",
+            excludes: excludes
+    )
+
+    // sources
+    sourceDirectories = files([
+            "src/main/kotlin"
+    ])
+    executionData = files("$buildDir/jacoco/testDebugUnitTest.exec")
+}
