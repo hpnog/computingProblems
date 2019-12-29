@@ -4,6 +4,8 @@
 
 ## LeetCode Exercise Solutions
 
+### C++ Solutions
+
 | Number         | Problem                                                                                                              | Solved Date |
 | :------------- | :------------------------------------------------------------------------------------------------------------------- | :---------- |
 | 1              | [Two-Sum](src/leetCodeSolutions/twoSum.h)                                                                            | 10/12/2019  |
@@ -20,3 +22,9 @@
 | 12             | [Remove Duplicates From Sorted Array Lists](src/leetCodeSolutions/removeDuplicatesFromSortedArray.h)                 | 24/12/2019  |
 | 13             | [String To Integer - atoi](src/leetCodeSolutions/stringToInteger_atoi.h)                                             | 24/12/2019  |
 | 14             | [Container With Most Water](src/leetCodeSolutions/containerWithMostWater.h)                                             | 26/12/2019  |
+
+### Kotlin Solutions
+
+| Number         | Problem                                                                                                              | Solved Date |
+| :------------- | :------------------------------------------------------------------------------------------------------------------- | :---------- |
+| 1              | [Int To Roman](leetCodeSolutionsKotlin/src/main/kotlin/IntToRoman.kt)                                    | 29/12/2019  |
