@@ -23,14 +23,16 @@ compileKotlin {
 }
 compileTestKotlin {
     kotlinOptions.jvmTarget = "1.8"
-}
+}    
 
 jacoco {
-    applyTo(tasks.test.get())
+    toolVersion = "0.8.5"
+    reportsDir = file("./customJacocoReportDir")
 }
 
-tasks.register<JacocoReport>("applicationCodeCoverageReport") {
-    executionData(tasks.test.get())
-    sourceSets(sourceSets.test.get())
+tasks.jacocoTestReport {
+    reports {
+        html.destination = file("${buildDir}/jacocoHtml")
+    }
 }
 
