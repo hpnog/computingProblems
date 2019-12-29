@@ -20,7 +20,6 @@ script:
   - ./bin/unit_tests
   - cd leetCodeSolutionsKotlin
   - ./gradlew build
-  - ./gradlew test
 
 env:
   global:
