@@ -7,7 +7,7 @@
 <a href="https://codecov.io/gh/hpnog/computingProblems">
     <img align="right" hspace="10" src="https://codecov.io/gh/hpnog/computingProblems/branch/master/graph/badge.svg" />
 </a>
-</div><br/>
+</div><br/><br/>
 
 <img align="left" hspace="10" height="50" src="./res/cppIcon.png"><img align="left" hspace="10" height="50" src="./res/kotlinIcon.png"><img align="right" hspace="10" height="50" src="./res/leetcodeIcon.png">
 </div><br/><br/><br/>
