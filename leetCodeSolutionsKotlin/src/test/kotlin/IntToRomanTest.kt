@@ -13,5 +13,7 @@ class IntToRomanTest {
         assertEquals("IX", solution.intToRoman(9))
         assertEquals("LVIII", solution.intToRoman(58))
         assertEquals("MCMXCIV", solution.intToRoman(1994))
+        assertEquals("I", solution.intToRoman(1))
+        assertEquals("", solution.intToRoman(0))
     }
 }
