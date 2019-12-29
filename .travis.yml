@@ -1,26 +1,31 @@
 sudo: false
-language: cpp, java
-compiler:
-  - gcc
-addons:
-  apt:
-    sources:
-    - ubuntu-toolchain-r-test
-    packages:
-    - g++-7
-install:
-- "[ $CXX = g++ ] && export CXX=g++-7 || true"
+
+matrix:
+  include:
+    - language: cpp
+      compiler:
+        - gcc
+      addons:
+        apt:
+          sources:
+          - ubuntu-toolchain-r-test
+          packages:
+          - g++-7
+      install:
+      - "[ $CXX = g++ ] && export CXX=g++-7 || true"
+      script:
+        - cmake .
+        - make
+        - ./bin/solutions -test
+        - ./bin/unit_tests
+    - language: java
+      script:
+        - cd leetCodeSolutionsKotlin
+        - ./gradlew build
+
 before_install:
   - chmod +x ./leetCodeSolutionsKotlin/gradlew
   - chmod +x ./leetCodeSolutionsKotlin/gradle/wrapper/gradle-wrapper.jar
-script:
-  - cmake .
-  - make
-  - ./bin/solutions -test
-  - ./bin/unit_tests
-  - cd leetCodeSolutionsKotlin
-  - ./gradlew build
-
 env:
   global:
     # Token provided in settings of codecov
@@ -30,3 +35,4 @@ after_success:
   # Run bash script to upload code coverage files
   - bash <(curl -s https://codecov.io/bash)
   - make clean
+  
