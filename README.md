@@ -2,6 +2,10 @@
 
 [![Build Status](https://travis-ci.com/hpnog/computingProblems.svg?branch=master)](https://travis-ci.com/hpnog/computingProblems) | [![codecov](https://codecov.io/gh/hpnog/computingProblems/branch/master/graph/badge.svg)](https://codecov.io/gh/hpnog/computingProblems)
 
+A repo dedicated to solving computing problems with full Continuous Integration and Test Coverage. Currently implementing solutions in C++ and Kotlin.
+
+> *[Issue with Kotlin code coverage](https://github.com/hpnog/computingProblems/issues/6)*
+
 ## LeetCode Exercise Solutions
 
 ### C++ Solutions
