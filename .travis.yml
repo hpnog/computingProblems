@@ -32,7 +32,8 @@ matrix:
         - "pip install codecov==2.0.15"
         - "pip install pytest-cov==2.7.1"
       script:
-        - python -m pytest --cov-report term --cov ./leetCodeSolutionsPython
+        - cd leetCodeSolutionsPython
+	- python -m pytest --cov-report term --cov .
 
 before_install:
   - chmod +x ./leetCodeSolutionsKotlin/gradlew
