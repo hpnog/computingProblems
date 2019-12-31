@@ -23,8 +23,10 @@ matrix:
         - cd leetCodeSolutionsKotlin
         - ./gradlew build
     - language: python
+      install:
+        - "pip install coverage"
       script:
-        - python -m unittest discover ./leetCodeSolutionsPython/ '*.py*'
+        - coverage -m unittest discover ./leetCodeSolutionsPython/ '*.py*'
 
 before_install:
   - chmod +x ./leetCodeSolutionsKotlin/gradlew
