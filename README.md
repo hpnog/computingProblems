@@ -9,16 +9,16 @@
 </a>
 </div><br/><br/>
 
-<img align="left" hspace="10" height="50" src="./res/cppIcon.png"><img align="left" hspace="10" height="50" src="./res/kotlinIcon.png"><img align="right" hspace="10" height="50" src="./res/leetcodeIcon.png">
+<img align="left" hspace="10" height="50" src="./res/cppIcon.png"><img align="left" hspace="10" height="50" src="./res/pythonIcon.png"><img align="left" hspace="10" height="50" src="./res/kotlinIcon.png"><img align="right" hspace="10" height="50" src="./res/leetcodeIcon.png">
 </div><br/><br/><br/>
 
-A repository dedicated to solving computing problems with full Continuous Integration and Test Coverage. Currently implementing solutions in C++ and Kotlin.
+A repository dedicated to solving computing problems with full Continuous Integration and Test Coverage. Currently implementing solutions in C++, Python and Kotlin.
 
 > *[Issue with Kotlin code coverage](https://github.com/hpnog/computingProblems/issues/6)*
 
 ## LeetCode Exercise Solutions
 
-### C++ Solutions
+### C++ Solutions <img align="center" hspace="10" height="50" src="./res/cppIcon.png">
 
 | Number         | Problem                                                                                                              | Solved Date |
 | :------------- | :------------------------------------------------------------------------------------------------------------------- | :---------- |
@@ -36,14 +36,16 @@ A repository dedicated to solving computing problems with full Continuous Integr
 | 12             | [String To Integer - atoi](src/leetCodeSolutions/stringToInteger_atoi.h)                                             | 24/12/2019  |
 | 13             | [Container With Most Water](src/leetCodeSolutions/containerWithMostWater.h)                                             | 26/12/2019  |
 
-### Kotlin Solutions
 
-| Number         | Problem                                                                                                              | Solved Date |
-| :------------- | :------------------------------------------------------------------------------------------------------------------- | :---------- |
-| 1              | [Int To Roman](leetCodeSolutionsKotlin/src/main/kotlin/IntToRoman.kt)                                    | 29/12/2019  |
-
-### Python Solutions
+### Python Solutions <img align="center" hspace="10" height="50" src="./res/pythonIcon.png">
 
 | Number         | Problem                                                                                                              | Solved Date |
 | :------------- | :------------------------------------------------------------------------------------------------------------------- | :---------- |
 | 1              | [TwoSum](leetCodeSolutionsPython/twoSum.py)                                                                          | 31/12/2019  |
+
+
+### Kotlin Solutions <img align="center" hspace="10" height="50" src="./res/kotlinIcon.png">
+
+| Number         | Problem                                                                                                              | Solved Date |
+| :------------- | :------------------------------------------------------------------------------------------------------------------- | :---------- |
+| 1              | [Int To Roman](leetCodeSolutionsKotlin/src/main/kotlin/IntToRoman.kt)                                    | 29/12/2019  |
