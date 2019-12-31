@@ -12,12 +12,9 @@ class Solution(object):
         """(Y
 
         haveSeenIt = {}
-        res = []
         for idx, val in enumerate(nums):
             if (target - val) in haveSeenIt:
-                res.append(haveSeenIt[target - val])
-                res.append(idx)
-                return res
+                return [haveSeenIt[target - val], idx]
             haveSeenIt[val] = idx
-        return res
+        return []
 
