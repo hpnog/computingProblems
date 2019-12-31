@@ -9,12 +9,12 @@ class Solution(object):
         :type nums: List[int]
         :type target: int
         :rtype: List[int]
-        """
+        """(Y
 
         haveSeenIt = {}
         res = []
         for idx, val in enumerate(nums):
-            if((target - val) in haveSeenIt):
+            if (target - val) in haveSeenIt:
                 res.append(haveSeenIt[target - val])
                 res.append(idx)
                 return res
