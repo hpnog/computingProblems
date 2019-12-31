@@ -22,6 +22,9 @@ matrix:
       script:
         - cd leetCodeSolutionsKotlin
         - ./gradlew build
+    - language: python
+      script:
+        - python -m unittest discover ./leetCodeSolutionsPython/ '*.py*'
 
 before_install:
   - chmod +x ./leetCodeSolutionsKotlin/gradlew
