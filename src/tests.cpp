@@ -7,7 +7,6 @@
 #include "leetCodeSolutions/longestCommonPrefix.h"
 #include "leetCodeSolutions/longestPalindromicSubstring.h"
 #include "leetCodeSolutions/longestSubstringWithoutRepeatingCharacters.h"
-#include "leetCodeSolutions/twoSum.h"
 #include "leetCodeSolutions/romanToInteger.h"
 #include "leetCodeSolutions/palindromeNumber.h"
 #include "leetCodeSolutions/zigzagConversion.h"
@@ -77,16 +76,6 @@ TEST_CASE( "Longest Substring Without Repeating Characters Problem", "[single-fi
     REQUIRE( solutionLongestSubstringWithoutRepeatingCharacters.lengthOfLongestSubstring("abcabcbb") == 3 );
     REQUIRE( solutionLongestSubstringWithoutRepeatingCharacters.lengthOfLongestSubstring("bbbbb") == 1 );
     REQUIRE( solutionLongestSubstringWithoutRepeatingCharacters.lengthOfLongestSubstring("pwwkew") == 3 );
-}
-
-TEST_CASE( "Two Sum Problem", "[single-file]" ) {
-    SolutionTwoSum solutionTwoSum;
-
-    std::vector<int> testCase_1 = {2, 7, 11, 15};
-    int target_1 = 9;
-    std::vector<int> solution_1 = {0, 1};
-
-    REQUIRE( solutionTwoSum.twoSum(testCase_1, target_1) == solution_1 );
 }
 
 TEST_CASE( "Roman To Integer Problem", "[single-file]" ) {
