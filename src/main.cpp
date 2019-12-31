@@ -8,7 +8,6 @@
 #include "leetCodeSolutions/longestCommonPrefix.h"
 #include "leetCodeSolutions/longestPalindromicSubstring.h"
 #include "leetCodeSolutions/longestSubstringWithoutRepeatingCharacters.h"
-#include "leetCodeSolutions/twoSum.h"
 #include "leetCodeSolutions/romanToInteger.h"
 #include "leetCodeSolutions/palindromeNumber.h"
 #include "leetCodeSolutions/zigzagConversion.h"
@@ -104,53 +103,47 @@ void goToMainMenu(bool& testsRunning) {
 			}
 			case 6: 
 			{
-				SolutionTwoSum problem;
+				SolutionRomanToInteger problem;
 				runSolution(problem, testsRunning);
 				break;
 			}
 			case 7: 
 			{
-				SolutionRomanToInteger problem;
+				SolutionPalindromeNumber problem;
 				runSolution(problem, testsRunning);
 				break;
 			}
 			case 8: 
 			{
-				SolutionPalindromeNumber problem;
+				SolutionZigZagConversion problem;
 				runSolution(problem, testsRunning);
 				break;
 			}
 			case 9: 
 			{
-				SolutionZigZagConversion problem;
+				SolutionValidParenthesis problem;
 				runSolution(problem, testsRunning);
 				break;
 			}
 			case 10: 
 			{
-				SolutionValidParenthesis problem;
+				SolutionMergeTwoSortedLists problem;
 				runSolution(problem, testsRunning);
 				break;
 			}
 			case 11: 
 			{
-				SolutionMergeTwoSortedLists problem;
+				SolutionRemoveDuplicatesFromSortedArray problem;
 				runSolution(problem, testsRunning);
 				break;
 			}
 			case 12: 
 			{
-				SolutionRemoveDuplicatesFromSortedArray problem;
-				runSolution(problem, testsRunning);
-				break;
-			}
-			case 13: 
-			{
 				SolutionAtoi problem;
 				runSolution(problem, testsRunning);
 				break;
 			}
-			case 14: 
+			case 13: 
 			{
 				SolutionContainerWithMostWater problem;
 				runSolution(problem, testsRunning);
