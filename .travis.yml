@@ -14,7 +14,7 @@ matrix:
       install:
       - "[ $CXX = g++ ] && export CXX=g++-7 || true"
       script:
-	- cd leetCodeSolutionsCpp
+        - cd leetCodeSolutionsCpp
         - cmake .
         - make
         - ./bin/solutions -test
