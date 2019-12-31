@@ -14,7 +14,7 @@ class Solution(object):
         haveSeenIt = {}
         res = []
         for idx, val in enumerate(nums):
-            if((target - val) in haveSeenIt.keys()):
+            if((target - val) in haveSeenIt):
                 res.append(haveSeenIt[target - val])
                 res.append(idx)
                 return res
