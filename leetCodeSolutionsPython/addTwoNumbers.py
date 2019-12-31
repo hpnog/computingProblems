@@ -3,8 +3,6 @@
 # Time Complexity:     O(n)
 # Space Complexity:    O(n)
 
-import unittest
-
 class Solution(object):
     def twoSum(self, nums, target):
         """
@@ -12,7 +10,7 @@ class Solution(object):
         :type target: int
         :rtype: List[int]
         """
-        
+
         haveSeenIt = {}
         res = []
         for idx, val in enumerate(nums):
@@ -23,18 +21,3 @@ class Solution(object):
             haveSeenIt[val] = idx
         return res
 
-class TwoSumCase(unittest.TestCase):
-    def setUp(self):
-        pass
-    
-    def tearDown(self):
-        pass
-    
-    def test_twoSum_convert(self):
-        s = Solution()
-        for nums, target, sol in [([2, 7, 11, 15], 9, [0, 1])]:
-            self.assertEqual(s.twoSum(nums, target), sol)
-
-
-if __name__ == '__main__':
-    unittest.main()
