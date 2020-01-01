@@ -42,10 +42,11 @@ A repository dedicated to solving computing problems with full Continuous Integr
 | Number         | Problem                                                                                                              | Solved Date |
 | :------------- | :------------------------------------------------------------------------------------------------------------------- | :---------- |
 | 1              | [TwoSum](leetCodeSolutionsPython/twoSum.py)                                                                          | 31/12/2019  |
+| 2              | [Remove Element](leetCodeSolutionsPython/removeElement.py)                                                           | 01/01/2020  |
 
 
 ### Kotlin Solutions <img align="center" hspace="10" height="50" src="./res/kotlinIcon.png">
 
 | Number         | Problem                                                                                                              | Solved Date |
 | :------------- | :------------------------------------------------------------------------------------------------------------------- | :---------- |
-| 1              | [Int To Roman](leetCodeSolutionsKotlin/src/main/kotlin/IntToRoman.kt)                                    | 29/12/2019  |
+| 1              | [Int To Roman](leetCodeSolutionsKotlin/src/main/kotlin/IntToRoman.kt)                                                | 29/12/2019  |
