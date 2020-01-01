@@ -44,6 +44,7 @@ A repository dedicated to solving computing problems with full Continuous Integr
 | 1              | [TwoSum](leetCodeSolutionsPython/twoSum.py)                                                                          | 31/12/2019  |
 | 2              | [Remove Element](leetCodeSolutionsPython/removeElement.py)                                                           | 01/01/2020  |
 | 3              | [Implementation Strstr](leetCodeSolutionsPython/implementationStrstr.py)                                             | 01/01/2020  |
+| 4              | [Search Insert Positions](leetCodeSolutionsPython/searchInsertPositions.py)                                          | 01/01/2020  |
 
 
 ### Kotlin Solutions <img align="center" hspace="10" height="50" src="./res/kotlinIcon.png">
