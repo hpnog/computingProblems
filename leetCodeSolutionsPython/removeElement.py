@@ -14,8 +14,8 @@ class Solution(object):
         i = 0
         while i < length:
             if nums[i] == val:
-                nums[i] = nums[length - 1]
                 length -= 1
+                nums[i] = nums[length]
             else:
                 i += 1
         return length
