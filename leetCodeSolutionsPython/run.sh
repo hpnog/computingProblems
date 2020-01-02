@@ -1,4 +1,4 @@
 #!/bin/bash
 
-python -m pytest --cov-report term --cov .
+python3 -m pytest --cov-report term --cov .
 

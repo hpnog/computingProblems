@@ -30,13 +30,11 @@ matrix:
         - bash <(curl -s https://codecov.io/bash) -R ./src/main/kotlin
     - language: python
       python:
-        - "3.5"
         - "3.6"
-        - "3.7"
       install:
-        - "pip install pytest==4.5.0"
-        - "pip install codecov==2.0.15"
-        - "pip install pytest-cov==2.7.1"
+        - "pip3 install pytest==5.3.2"
+        - "pip3 install codecov==2.0.15"
+        - "pip3 install pytest-cov==2.8.1"
       script:
         - cd leetCodeSolutionsPython
         - python -m pytest --cov-report term --cov .
