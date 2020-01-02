@@ -20,14 +20,14 @@ matrix:
         - ./bin/solutions -test
         - ./bin/unit_tests
       after_success:
-        - bash <(curl -s https://codecov.io/bash) -R .
+        - bash <(curl -s https://codecov.io/bash) -R ../
         - make clean
     - language: java
       script:
         - cd leetCodeSolutionsKotlin
         - ./gradlew build
       after_success:
-        - bash <(curl -s https://codecov.io/bash) -R .
+        - bash <(curl -s https://codecov.io/bash) -R ./src/main/kotlin
     - language: python
       python:
         - "3.5"
