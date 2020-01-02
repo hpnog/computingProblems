@@ -27,7 +27,7 @@ matrix:
         - cd leetCodeSolutionsKotlin
         - ./gradlew build
       after_success:
-        - bash <(curl -s https://codecov.io/bash) -R ./src/main/kotlin
+        - bash <(curl -s https://codecov.io/bash) -R ./src/
     - language: python
       python:
         - "3.5"
