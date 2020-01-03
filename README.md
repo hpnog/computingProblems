@@ -45,7 +45,7 @@ A repository dedicated to solving computing problems with full Continuous Integr
 | 4              | [Search Insert Positions](leetCodeSolutionsPython/searchInsertPositions.py)                                          | 01/01/2020  |
 | 5              | [Cunt And Say](leetCodeSolutionsPython/countAndSay.py)                                                               | 02/01/2020  |
 | 6              | [Maximum SubArray](leetCodeSolutionsPython/maximumSubArray.py)                                                       | 02/01/2020  |
-| 6              | [Length Of Last Word](leetCodeSolutionsPython/lengthOfLastWord.py)                                                   | 03/01/2020  |
+| 7              | [Length Of Last Word](leetCodeSolutionsPython/lengthOfLastWord.py)                                                   | 03/01/2020  |
 
 ### Kotlin Solutions <img align="center" hspace="10" height="50" src="./res/kotlinIcon.png">
 
