@@ -14,8 +14,6 @@
 
 A repository dedicated to solving computing problems with full Continuous Integration and Test Coverage. Currently implementing solutions in C++, Python and Kotlin.
 
-> *[Issue with Kotlin code coverage](https://github.com/hpnog/computingProblems/issues/6)*
-
 ## LeetCode Exercise Solutions
 
 ### C++ Solutions <img align="center" hspace="10" height="50" src="./res/cppIcon.png">
