@@ -1,4 +1,7 @@
 # Found in https://leetcode.com/problems/path-sum/
+#
+# * Time complexity: O(n)
+# * Space complexity: O(h) - h is the height of the tree
 
 # Definition for a binary tree node.
 class TreeNode:
