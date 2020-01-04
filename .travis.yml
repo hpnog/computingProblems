@@ -37,7 +37,7 @@ matrix:
         - "pip3 install pytest-cov==2.8.1"
       script:
         - cd leetCodeSolutionsPython
-        - python -m pytest --cov-report term --cov .
+        - python3 -m pytest --cov-report term --cov .
       after_success:
         - bash <(curl -s https://codecov.io/bash) -R .
 
