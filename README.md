@@ -48,6 +48,7 @@ A repository dedicated to solving computing problems with full Continuous Integr
 | 7              | [Length Of Last Word](leetCodeSolutionsPython/lengthOfLastWord.py)                                                   | 03/01/2020  |
 | 8              | [Three Sum](leetCodeSolutionsPython/threeSum.py)                                                                     | 04/01/2020  |
 | 9              | [Path Sum](leetCodeSolutionsPython/pathSum.py)                                                                       | 04/01/2020  |
+| 10             | [Path Sum II](leetCodeSolutionsPython/pathSumII.py)                                                                  | 08/01/2020  |
 
 ### Kotlin Solutions <img align="center" hspace="10" height="50" src="./res/kotlinIcon.png">
 

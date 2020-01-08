@@ -4,11 +4,8 @@
 # * Space complexity: O(h) - h is the height of the tree
 
 # Definition for a binary tree node.
-class TreeNode:
-    def __init__(self, x):
-        self.val = x
-        self.left = None
-        self.right = None
+
+from Utils.TreeNode import TreeNode
 
 class Solution:
     def hasPathSum(self, root: TreeNode, sum: int) -> bool:
