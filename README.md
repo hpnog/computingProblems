@@ -50,6 +50,7 @@ A repository dedicated to solving computing problems with full Continuous Integr
 | 9              | [Path Sum](leetCodeSolutionsPython/pathSum.py)                                                                       | 04/01/2020  |
 | 10             | [Path Sum II](leetCodeSolutionsPython/pathSumII.py)                                                                  | 08/01/2020  |
 | 11             | [3 Sum Closest](leetCodeSolutionsPython/threeSumClosest.py)                                                          | 09/01/2020  |
+| 12             | [Plus One](leetCodeSolutionsPython/plusOne.py)                                                                       | 09/01/2020  |
 
 ### Kotlin Solutions <img align="center" hspace="10" height="50" src="./res/kotlinIcon.png">
 
