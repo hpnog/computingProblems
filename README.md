@@ -52,6 +52,7 @@ A repository dedicated to solving computing problems with full Continuous Integr
 | 11             | [3 Sum Closest](leetCodeSolutionsPython/threeSumClosest.py)                                                          | 09/01/2020  |
 | 12             | [Plus One](leetCodeSolutionsPython/plusOne.py)                                                                       | 09/01/2020  |
 | 13             | [Add Binary](leetCodeSolutionsPython/addBinary.py)                                                                   | 15/01/2020  |
+| 14             | [Valid Palindrome](leetCodeSolutionsPython/validPalindrome.py)                                                       | 20/01/2020  |
 
 ### Kotlin Solutions <img align="center" hspace="10" height="50" src="./res/kotlinIcon.png">
 
