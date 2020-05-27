@@ -56,7 +56,8 @@ A repository dedicated to solving computing problems with full Continuous Integr
 | 15             | [Word Ladder](leetCodeSolutionsPython/wordLadder.py)                                                                 | 20/01/2020  |
 | 16             | [Letter Combination Of a Phone Number](leetCodeSolutionsPython/letterCombinationOfAPhoneNumber.py)                   | 26/05/2020  |
 | 17             | [Generate Parenthesis](leetCodeSolutionsPython/generateParenthesis.py)                                               | 27/05/2020  |
-| 17             | [Median Of Two Sorted Arrays](leetCodeSolutionsPython/medianOfTwoSortedArrays.py)                                    | 27/05/2020  |
+| 18             | [Median Of Two Sorted Arrays](leetCodeSolutionsPython/medianOfTwoSortedArrays.py)                                    | 27/05/2020  |
+| 19             | [Regular Expression Matching](leetCodeSolutionsPython/regularExpressionMatching.py)                                  | 27/05/2020  |
 
 ### Kotlin Solutions <img align="center" hspace="10" height="50" src="./res/kotlinIcon.png">
 
