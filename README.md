@@ -58,6 +58,7 @@ A repository dedicated to solving computing problems with full Continuous Integr
 | 17             | [Generate Parenthesis](leetCodeSolutionsPython/generateParenthesis.py)                                               | 27/05/2020  |
 | 18             | [Median Of Two Sorted Arrays](leetCodeSolutionsPython/medianOfTwoSortedArrays.py)                                    | 27/05/2020  |
 | 19             | [Regular Expression Matching](leetCodeSolutionsPython/regularExpressionMatching.py)                                  | 27/05/2020  |
+| 19             | [Remove Nth Node From End Of List](leetCodeSolutionsPython/removeNthNodeFromEndOfList.py)                            | 28/05/2020  |
 
 ### Kotlin Solutions <img align="center" hspace="10" height="50" src="./res/kotlinIcon.png">
 
