@@ -61,6 +61,7 @@ A repository dedicated to solving computing problems with full Continuous Integr
 | 20             | [Remove Nth Node From End Of List](leetCodeSolutionsPython/removeNthNodeFromEndOfList.py)                            | 28/05/2020  |
 | 21             | [Merge K Sorted Lists](leetCodeSolutionsPython/mergeKSortedLists.py)                                                 | 31/05/2020  |
 | 22             | [4Sum II](leetCodeSolutionsPython/fourSum_ii.py)                                                                     | 31/05/2020  |
+| 23             | [4Sum II](leetCodeSolutionsPython/longestSubStringWithAtLeastKRepeatingCharacters.py)                                | 31/05/2020  |
 
 ### Kotlin Solutions <img align="center" hspace="10" height="50" src="./res/kotlinIcon.png">
 
