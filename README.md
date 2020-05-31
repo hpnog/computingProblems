@@ -32,7 +32,7 @@ A repository dedicated to solving computing problems with full Continuous Integr
 | 10             | [Merge Two Sorted Lists](leetCodeSolutionsCpp/src/leetCodeSolutions/mergeTwoSortedLists.h)                                                | 22/12/2019  |
 | 11             | [Remove Duplicates From Sorted Array Lists](leetCodeSolutionsCpp/src/leetCodeSolutions/removeDuplicatesFromSortedArray.h)                 | 24/12/2019  |
 | 12             | [String To Integer - atoi](leetCodeSolutionsCpp/src/leetCodeSolutions/stringToInteger_atoi.h)                                             | 24/12/2019  |
-| 13             | [Container With Most Water](leetCodeSolutionsCpp/src/leetCodeSolutions/containerWithMostWater.h)                                             | 26/12/2019  |
+| 13             | [Container With Most Water](leetCodeSolutionsCpp/src/leetCodeSolutions/containerWithMostWater.h)                                          | 26/12/2019  |
 
 
 ### Python Solutions <img align="center" hspace="10" height="50" src="./res/pythonIcon.png">
@@ -58,7 +58,8 @@ A repository dedicated to solving computing problems with full Continuous Integr
 | 17             | [Generate Parenthesis](leetCodeSolutionsPython/generateParenthesis.py)                                               | 27/05/2020  |
 | 18             | [Median Of Two Sorted Arrays](leetCodeSolutionsPython/medianOfTwoSortedArrays.py)                                    | 27/05/2020  |
 | 19             | [Regular Expression Matching](leetCodeSolutionsPython/regularExpressionMatching.py)                                  | 27/05/2020  |
-| 19             | [Remove Nth Node From End Of List](leetCodeSolutionsPython/removeNthNodeFromEndOfList.py)                            | 28/05/2020  |
+| 20             | [Remove Nth Node From End Of List](leetCodeSolutionsPython/removeNthNodeFromEndOfList.py)                            | 28/05/2020  |
+| 21             | [Merge K Sorted Lists](leetCodeSolutionsPython/mergeKSortedLists.py)                                                 | 31/05/2020  |
 
 ### Kotlin Solutions <img align="center" hspace="10" height="50" src="./res/kotlinIcon.png">
 

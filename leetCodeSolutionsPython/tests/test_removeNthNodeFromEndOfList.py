@@ -20,9 +20,5 @@ class RemoveNthNodeFromEndOfListCase(unittest.TestCase):
             currSol = s.printList(currSol)
             expectedSol = s.printList(sol)
 
-            print("##########################################")
-            print(currSol)
-            print(expectedSol)
-
             self.assertEqual(currSol, expectedSol)
 
