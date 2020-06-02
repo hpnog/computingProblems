@@ -63,6 +63,7 @@ A repository dedicated to solving computing problems with full Continuous Integr
 | 22             | [4Sum II](leetCodeSolutionsPython/fourSum_ii.py)                                                                     | 31/05/2020  |
 | 23             | [Longest Substring with At Least K Repeating Characters](leetCodeSolutionsPython/longestSubStringWithAtLeastKRepeatingCharacters.py)| 31/05/2020  |
 | 24             | [Increasing Triplet Subsequence](leetCodeSolutionsPython/increasingTripletSubsequence.py)                            | 01/06/2020  |
+| 25             | [Wiggle Sort II](leetCodeSolutionsPython/wiggleSort_ii.py)                                                           | 01/06/2020  |
 
 ### Kotlin Solutions <img align="center" hspace="10" height="50" src="./res/kotlinIcon.png">
 
